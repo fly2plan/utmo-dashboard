@@ -3,8 +3,8 @@ import { Button, Form, OverlayTrigger } from "react-bootstrap";
 import { Info } from "../../../";
 import { prettify } from "../../../../utils"
 
-const StringField = ({ forwardedKey, updateField, field, setHeader }) => {
-  const [input, setInput] = useState(null);
+const StringField = ({ forwardedKey, updateField, field, setHeader, path }) => {
+  const [input, setInput] = useState('');
   const prettyKeyRef = useRef(prettify(forwardedKey));
 
   const handleChange = (event) => {
@@ -12,7 +12,7 @@ const StringField = ({ forwardedKey, updateField, field, setHeader }) => {
   }
 
   useEffect(() => {
-    updateField({ type: forwardedKey, value: input });
+    updateField({ path, type: 'add', value: input });
     if (setHeader && input && forwardedKey === 'Value') {
       setHeader(input);
     };
@@ -20,7 +20,7 @@ const StringField = ({ forwardedKey, updateField, field, setHeader }) => {
 
   return (
     <div className="flight-plan-string-field">
-    <Form.Group key={forwardedKey} className="mb-3" controlId="formBasicEmail">
+    <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>
         <OverlayTrigger
           placement="right"
