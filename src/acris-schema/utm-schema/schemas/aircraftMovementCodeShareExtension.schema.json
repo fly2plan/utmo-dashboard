@@ -1,0 +1,15 @@
+{
+	"title": "AircraftMovementCodeShare",
+	"description": "Information about the Code Shares for the flight",
+	"type": "object",
+	"properties": {
+		"Number": {
+			"description": "Information about the displayed aircraft movement code share.",
+			"type": "string"
+		},
+		"ShowToPublic": {
+			"description": "Flag to indicate whether the code share information is to be provided to the public",
+			"type": "boolean"
+		}
+	}
+}

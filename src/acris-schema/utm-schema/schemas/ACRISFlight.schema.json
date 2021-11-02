@@ -1,0 +1,74 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "ACRISFlight",
+	"type": "object",
+	"description": "The flight in stp app services",
+	"properties": {
+		"operatingAirline": {
+			"type": "object",
+			"description": "The airline operating the flight. Either IATA or ICAO must be present",
+			"properties": {
+				"iataCode": {
+					"type": "string",
+					"description": "The airline's IATA-Code",
+					"minLength": 2,
+					"maxLength": 2
+				},
+				"icaoCode": {
+					"type": "string",
+					"description": "The airline's ICAO-Code",
+					"minLength": 3,
+					"maxLength": 3
+				},
+				"name": {
+					"type": "string",
+					"description": "The long name of airline"
+				}
+			}
+		},
+		"flightNumber": {
+			"$ref": "flightNumber.schema.json",
+			"description": "The flight's operating flightNumber"
+		},
+		"departureAirport": {
+			"type": "string",
+			"description": "The departure airport as IATA format"
+		},
+		"arrivalAirport": {
+			"type": "string",
+			"description": "The arrival airport as IATA format"
+		},
+		"originDate": {
+			"type": "string",
+			"format": "date",
+			"description": "Date expressed in UTC. Time element is not used. This date MUST not change once initialized. For a flight SFO-DEN-LHR both flight legs SFO-DEN and DEN-LHR will have the origin date of the SFO departing date (example 2015-10-15)."
+		},
+		"TypeBRawMessage": {
+			"type": "string"
+		},
+		"AircraftMovement": {
+			"$ref": "aircraftMovementExtension.schema.json"
+		},
+		"AircraftTransport": {
+			"$ref": "aircraftTransportExtension.schema.json"
+		},
+		"AirportFacility": {
+			"$ref": "airportFacilityExtension.schema.json"
+		},
+		"Route": {
+			"$ref": "routeExtension.schema.json"
+		},
+		"ScheduledAircraftMovement": {
+			"$ref": "scheduledAircraftMovementExtension.schema.json"
+		},
+		"DataQuality": {
+			"$ref": "dataQualityExtension.schema.json"
+		},
+		"DroneAircraftMovement": {
+			"$ref": "droneAircraftMovementExtension.schema.json"
+		},
+		"ScheduledDroneAircraftMovement": {
+			"$ref": "scheduledDroneAircraftMovementExtension.schema.json"
+		}
+	}
+}

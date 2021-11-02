@@ -1,0 +1,202 @@
+{
+	"title": "OperationalTimes",
+	"description": "Information about the operational times for the aircraft movement/flight",
+	"type": "object",
+	"properties": {
+		"ActualCommenceofGroundHandlingTimeACGT": {
+			"description": "The time when ground handling on an aircraft starts, can be equal to Actual In-Block Time (to be determined locally). This data element is also known in the aviation industry by the acronym ACGT.",
+			"type": "string"
+		},
+		"ActualCommencementofDeicingTimeACZT": {
+			"description": "The time when de-icing operations on an aircraft starts. Source: CDM implementation manual.This data element is also known in the aviation industry by the acronym ACZT",
+			"type": "string"
+		},
+		"ActualDeIcingDurationADIT": {
+			"description": "The actual time taken to de-ice the aircraft (AEZT-ACZT)",
+			"type": "string"
+		},
+		"ActualEndBoardingTimeAEBT": {
+			"description": "Actual End of Boarding Time. This data element is also known in the aviation industry by the acronym AEBT",
+			"type": "string"
+		},
+		"ActualEndofDeicingTimeAEZT": {
+			"description": "The time when de-icing operations on an aircraft end. Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym AEZT",
+			"type": "string"
+		},
+		"ActualEndofGroundHandlingTimeAEGT": {
+			"description": "The time when ground handling on an aircraft ends, can be equal to Actual Ready for Departure Time (to be determined locally). This data element is also known in the aviation industry by the acronym AEGT.",
+			"type": "string"
+		},
+		"ActualFinalApproachTimeAFAT": {
+			"description": "Actual Final Approach Time. This data element is also known in the aviation industry by the acronym AFAT.",
+			"type": "string"
+		},
+		"ActualGroundHandlingDurationAGHT": {
+			"description": "The total duration of the ground handling of the aircraft (AEGT-ACGT)",
+			"type": "string"
+		},
+		"ActualInBlockTimeAIBT": {
+			"description": "The time that an aircraft arrives in blocks (equivalent to airline/handler ATA - Actual Time of Arrival, ACARS = IN). Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym AIBT",
+			"type": "string"
+		},
+		"ActualLandingTimeALDT": {
+			"description": "The time that an aircraft lands on a runway (equivalent to ATC ATA - Actual Time of Arrival = landing, ACARS=ON). Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym ALDT",
+			"type": "string"
+		},
+		"ActualLastCallTime": {
+			"description": "Actual Last Call Time.",
+			"type": "string"
+		},
+		"ActualOffBlockTimeAOBT": {
+			"description": "Time the aircraft pushes back/vacates the parking position (equivalent to airline/handlers ATD - Actual Time of Departure &amp; ACARS = OUT). Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym AOBT",
+			"type": "string"
+		},
+		"ActualReadyforDeicingTimeARZT": {
+			"description": "De-Icing Ready Time. The time when the aircraft is ready to be deiced. Source: CDM implementation manual.This data element is also known in the aviation industry by the acronym ARZT.",
+			"type": "string"
+		},
+		"ActualReadyforDepartureTimeARDT": {
+			"description": "When the aircraft is ready for pushback immediately after clearance delivery (all doors are closed and the pushback tractor - ordered by handling agent - is in position. Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym ARDT",
+			"type": "string"
+		},
+		"ActualStartBoardingTimeASBT": {
+			"description": "Actual Start Boarding Time. This data element is also known in the aviation industry by the acronym ASBT",
+			"type": "string"
+		},
+		"ActualStartUpApprovalTimeASAT": {
+			"description": "Time that an aircraft receives its start up approval. Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym ASAT",
+			"type": "string"
+		},
+		"ActualStartUpRequestTimeASRT": {
+			"description": "Actual Start-up Request Time.This data element is also known in the aviation industry by the acronym ASRT",
+			"type": "string"
+		},
+		"ActualTakeOffTimeATOT": {
+			"description": "The time that an aircraft takes off from the runway. (equivalent to ATC ATD - Actual Time of Departure, ACARS = OFF). Source: CDM implementation manual. This data element is also known in the aviation industry by the acronym ATOT",
+			"type": "string"
+		},
+		"ActualTaxiInDurationAXIT": {
+			"description": "Actual time taken between Actual Landing Time and Actual In Block Time. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym AXIT",
+			"type": "string"
+		},
+		"ActualTaxiOutDurationAXOT": {
+			"description": "Duration between Actual off block time and Actual take-off time. Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym AXOT",
+			"type": "string"
+		},
+		"ActualTimeOfOperationLastPortOfCallLPocATO": {
+			"description": "Information about the actual time of operation from the last port of call.  For arrivals this is the actual time of departure from the previous port. For departures this is the  actual time of departure.",
+			"type": "string"
+		},
+		"ActualTurnaroundTimeATTT": {
+			"description": "The time taken between Actual In-Block Time and Actual Off-Block Time.",
+			"type": "string"
+		},
+		"AircraftMovementMeasure": {
+			"$ref": "aircraftMovementMeasureExtension.schema.json"
+		},
+		"CalculatedTakeOffTimeCTOT": {
+			"description": "A time calculated and issued by the appropriate central management unit, as a result of tactical slot allocation, at which a flight is expected to become airborne. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym CTOT",
+			"type": "string"
+		},
+		"EntryintoApproachZoneTime": {
+			"description": "Date and time of entry into approach zone for an inbound aircraft (always UTC).",
+			"type": "string"
+		},
+		"EstimatedCommencementofDeIcingTimeECZT": {
+			"description": "The time when de-icing operations on an aircraft is expected to start. Source: CDM implementation manual.This data element is also known in the aviation industry by the acronym ECZT",
+			"type": "string"
+		},
+		"EstimatedDeIcingDurationEDIT": {
+			"description": "The time between the estimated start of de-icing and the estimated end of de-icing",
+			"type": "string"
+		},
+		"EstimatedEndBoardingTimeEEBT": {
+			"description": "Estimated End Boarding Time. This data element is also known in the aviation industry by the acronym EEBT",
+			"type": "string"
+		},
+		"EstimatedEndofDeicingTimeEEZT": {
+			"description": "The estimated time when de-icing operations on an aircraft end. Source: CDM implementation manual.This data element is also known in the aviation industry by the acronym EEZT",
+			"type": "string"
+		},
+		"EstimatedInBlockTimeEIBT": {
+			"description": "The estimated time that an aircraft will arrive in blocks (equivalent to Airline/Handler ETA - Estimated Time of Arrival). Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym EIBT",
+			"type": "string"
+		},
+		"EstimatedLandingTimeELDT": {
+			"description": "The estimated time that an aircraft will touchdown on the runway (equivalent to ATC ETA - estimated time of arrival). Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym ELDT",
+			"type": "string"
+		},
+		"EstimatedLastCallTime": {
+			"description": "Estimated Last Call Time.",
+			"type": "string"
+		},
+		"EstimatedOffBlockTimeEOBT": {
+			"description": "The estimated time that an aircraft will leave from blocks (equivalent to Airline/Handler ETA - Estimated Time of Departure). Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym EOBT",
+			"type": "string"
+		},
+		"EstimatedReadyforDeicingTimeERZT": {
+			"description": "The estimated time when the aircraft is expected to be ready for de-icing operations. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym ERZT",
+			"type": "string"
+		},
+		"EstimatedStartBoardingTime": {
+			"description": "Estimated Start Boarding Time.",
+			"type": "string"
+		},
+		"EstimatedTakeOffTimeETOT": {
+			"description": "The estimated take off time taking into account the Estimated Off Block Time plus Estimated Taxi-Out Time. Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym ETOT",
+			"type": "string"
+		},
+		"EstimatedTaxiInDurationEXIT": {
+			"description": "The estimated time between landing and in-block. Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym EXIT",
+			"type": "string"
+		},
+		"EstimatedTaxiOutDurationEXOT": {
+			"description": "The estimated time between off-block and take off. Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym EXOT",
+			"type": "string"
+		},
+		"EstimatedTurnAroundDurationETTT": {
+			"description": "The time estimated by the Aircraft Operator/Ground Handling on the day of operation to turn-round a flight taking into account the operational constraints. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym ETTT",
+			"type": "string"
+		},
+		"MinimumTurnAroundTimeMTTT": {
+			"description": "The minimum turn-round time agreed with an Aircraft Operator or Ground Handler for a specified flight or aircraft type",
+			"type": "string"
+		},
+		"PlannedLastCallTime": {
+			"description": "Planned Last Call Time.",
+			"type": "string"
+		},
+		"PlannedStartBoardingTime": {
+			"description": "Planned Start Boarding Time.",
+			"type": "string"
+		},
+		"ScheduledInBlockTimeSIBT": {
+			"description": "The time that an aircraft is scheduled to arrive at its parking position. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym SIBT",
+			"type": "string"
+		},
+		"ScheduledOffBlockTimeSOBT": {
+			"description": "The time that an aircraft is scheduled to depart from its parking position. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym SOBT",
+			"type": "string"
+		},
+		"ScheduledTurnAroundDurationSTTT": {
+			"description": "The time scheduled to turn-round a flight. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym STTT",
+			"type": "string"
+		},
+		"TargetLandingTimeTLDT": {
+			"description": "The target landing time for an aircraft movement. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym TLDT",
+			"type": "string"
+		},
+		"TargetOffBlockTimeTOBT": {
+			"description": "Time, taking into account Target Start Up Time and the traffic situation, that an aircraft can expect to pushback (when start-up and pushback are issued separately). Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym TOBT",
+			"type": "string"
+		},
+		"TargetStartUpApprovalTimeTSAT": {
+			"description": "The time provided by Air Traffic Control taking into account target off-block time, Calculated take off time and/or the traffic situation that an aircraft can expect to receive start-up/pushback approval (when start-up and pushback are issued together). Source: CDM Implementation Manual.This data element is also known in the aviation industry by the acronym TSAT",
+			"type": "string"
+		},
+		"TargetTakeOffTimeTTOT": {
+			"description": "The target take off time taking into account the target start-up approval time/ target off-block approval time plus estimated taxi-out time. Source: CDM Implementation Manual. This data element is also known in the aviation industry by the acronym TTOT",
+			"type": "string"
+		}
+	}
+}

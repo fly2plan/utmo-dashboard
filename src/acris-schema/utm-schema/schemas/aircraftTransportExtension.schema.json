@@ -1,0 +1,295 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "AircraftTransport",
+	"description": "Information about the Aircraft (Aircraft Transport) used in the Aircraft Movement/Flight",
+	"type": "object",
+	"properties": {
+		"AircraftDescription": {
+			"description": "Aircraft Description",
+			"type": "string"
+		},
+		"EarliestDeliveryDateTime": {
+			"description": "Information about the earliest delivery date and time associated with a ground transport",
+			"type": "string"
+		},
+		"FutureMaximumTakeOffWeight": {
+			"description": "Future max takeoff weight",
+			"type": "string"
+		},
+		"GuidanceRequired": {
+			"description": "Information on whether some guidance is required for the Aircraft Transport",
+			"type": "boolean"
+		},
+		"LatestDeliveryDateTime": {
+			"description": "Information about the latest delivery date and time associated with a ground transport",
+			"type": "string"
+		},
+		"Mode": {
+			"description": "Information about the mode of transport",
+			"type": "string"
+		},
+		"NoiseCertificationIndicator": {
+			"description": "Noise certification indicator",
+			"type": "string"
+		},
+		"StandChangeIndicator": {
+			"description": "Information or indicator that Aircraft has changed stands",
+			"type": "string"
+		},
+		"VehicleRequired": {
+			"description": "Information on whether a Coach Vehicle is required for the Aircraft Transport",
+			"type": "boolean"
+		},
+		"AircraftTransportType": {
+			"$ref": "aircraftTransportTypeExtension.schema.json"
+		},
+		"AircraftTransportEquipment": {
+			"$ref": "aircraftTransportEquipmentExtension.schema.json"
+		},
+		"AircraftTransportCabinConfiguration": {
+			"description": "Information about a specific cabin within the Aircraft",
+			"type": "object",
+			"properties": {
+				"Cabin": {
+					"description": "Information about the Aircraft Cabin.",
+					"type": "string"
+				},
+				"CabinClassType": {
+					"description": "A business defined code assigned to the category of Cabin",
+					"type": "string"
+				},
+				"CabinType": {
+					"description": "Information about the Aircraft cabin category. Supported by a PADIS enumeration list (PADIS 9873).",
+					"type": "string"
+				},
+				"Compartment": {
+					"description": "Information about the compartment on an Aircraft",
+					"type": "string"
+				},
+				"SeatCapacity": {
+					"description": "Information about the seating capacity in each cabin. Use a repeating group with cabin type",
+					"type": "string"
+				},
+				"SeatCount": {
+					"description": "Information about the number of seats on the Aircraft.",
+					"type": "string"
+				},
+				"Status": {
+					"description": "Information about the status of seats which includes 'New', 'Update' and 'Delete'",
+					"type": "string"
+				}
+			}
+		},
+		"AircraftTransportIdentification": {
+			"type": "object",
+			"description": "Information about the identifiers used to identify the Aircraft Transport",
+			"properties": {
+				"AircraftAddress": {
+					"description": "A unique combination of twenty-four bits available for assignment to an aircraft for the purpose of air-ground communications, navigation and surveillance. [ICAO Doc 4444]",
+					"type": "string"
+				},
+				"AircraftBodyType": {
+					"description": "Information about the Aircraft Transport's Body Type",
+					"type": "string"
+				},
+				"AircraftVersion": {
+					"description": "Information about the version of the Aircraft Transport",
+					"type": "string"
+				},
+				"CodeRequired": {
+					"description": "Information that describes the required code that identifies the Aircraft Transport",
+					"type": "string"
+				},
+				"FleetNumber": {
+					"description": "Airline ship/fleet number as assigned by the airline",
+					"type": "string"
+				},
+				"GeneralTypeCode": {
+					"description": "Information about the general Aircraft Type Code",
+					"type": "string"
+				},
+				"GroupCode": {
+					"description": "Information on the group code for the Aircraft Transport",
+					"type": "string"
+				},
+				"OtherIdentifier": {
+					"description": "Other non specific identifier, as may be specified in FPL Messages.",
+					"type": "string"
+				},
+				"Registration": {
+					"description": "Information about the registration of the Aircraft Transport.",
+					"type": "string"
+				}
+			}
+		},
+		"AircraftTransportLoad": {
+			"description": "Information about the load carried by the Aircraft Transport on departure from the Host Airport",
+			"type": "object",
+			"properties": {
+				"BallastWeight": {
+					"description": "Total weight of ballast on aircraft",
+					"type": "string"
+				},
+				"DeadLoad": {
+					"description": "Dead load - total weight on aircraft",
+					"type": "string"
+				},
+				"PassengerPartyCarried": {
+					"type": "object",
+					"description": "Information about the passengers on the Aircraft Transport",
+					"properties": {
+						"Passenger Types": {
+							"type": "array",
+							"items": {
+								"$ref": "passengerTypeExtension.schema.json"
+							}
+						},
+						"TotalPassengerCount": {
+							"description": "Information about the total count of passengers on the Aircraft",
+							"type": "integer"
+						}
+					}
+				},
+				"BagItemCarried": {
+					"type": "object",
+					"description": "Information about the bags carried on the flight",
+					"properties": {
+						"Bag Types": {
+							"type": "array",
+							"items": {
+								"$ref": "bagTypeExtension.schema.json"
+							}
+						},
+						"BagTypeCount": {
+							"description": "Information about the count of bags of a particular type on the Aircraft",
+							"type": "integer"
+						},
+						"BagTypeWeight": {
+							"description": "Information about the weight of bags in KG of a particular type on the Aircraft",
+							"type": "integer"
+						},
+						"TotalCount": {
+							"description": "Information about the total number of bags on board the Aircraft.",
+							"type": "integer"
+						},
+						"TotalWeight": {
+							"description": "Information about the total weight (kilos) of bags on board the Aircraft.",
+							"type": "integer"
+						}
+					}
+				},
+				"CargoItemCarried": {
+					"type": "object",
+					"description": "Information about the cargo carried by the flight",
+					"properties": {
+						"Cargo Types": {
+							"type": "array",
+							"items": {
+								"$ref": "cargoTypeExtension.schema.json"
+							}
+						},
+						"CargoTypeCount": {
+							"description": "Information about the count of cargo items of a particular type on the Aircraft",
+							"type": "integer"
+						},
+						"CargoTypeWeight": {
+							"description": "Information about the weight of cargo in KG of a particular type on the Aircraft",
+							"type": "integer"
+						},
+						"SpecialCargo": {
+							"description": "Information that identify any special Cargo Item on board the Aircraft Transport. Refer to IATA PADIS Code List xxx.",
+							"type": "string"
+						},
+						"TotalCount": {
+							"description": "Information about the total number of Cargo Items transported by the Aircraft Transport",
+							"type": "integer"
+						},
+						"TotalWeight": {
+							"description": "Information about the total number of Cargo Items transported by the Aircraft Transport",
+							"type": "integer"
+						}
+					}
+				},
+				"MailItemCarried": {
+					"type": "object",
+					"description": "Information about the mail carried by the flight",
+					"properties": {
+						"Mail Types": {
+							"type": "array",
+							"items": {
+								"$ref": "mailTypeExtension.schema.json"
+							}
+						},
+						"TotalWeight": {
+							"description": "Information on the total weight of mail on board the Aircraft.",
+							"type": "integer"
+						}
+					}
+				},
+				"CrewPartyCarried": {
+					"type": "object",
+					"description": "Information on the Crew on the flight",
+					"properties": {
+						"Crew Types": {
+							"type": "array",
+							"items": {
+								"$ref": "crewTypeExtension.schema.json"
+							}
+						},
+						"CrewCount": {
+							"description": "Number of Crew Members (cockpit &amp; cabin, jump seat)",
+							"type": "integer"
+						}
+					}
+				}
+			}
+			},
+			"AircraftTransportIdentifier": {
+				"description": "Information about the identifiers used to identify the Aircraft Transport",
+				"type": "object",
+				"properties": {
+					"AircraftBodyType": {
+						"description": "Information about the Aircraft Transport's Body Type",
+						"type": "string"
+					},
+					"AircraftVersion": {
+						"description": "Information about the version of the Aircraft Transport",
+						"type": "string"
+					},
+					"CodeRequired": {
+						"description": "Information that describes the required code that identifies the Aircraft Transport ",
+						"type": "string"
+					},
+					"FleetNumber": {
+						"description": "Airline ship/fleet number as assigned by the airline",
+						"type": "string"
+					},
+					"GeneralTypeCode": {
+						"description": "Information about the general Aircraft Type Code",
+						"type": "string"
+					},
+					"GroupCode": {
+						"description": "Information on the group code for the Aircraft Transport",
+						"type": "string"
+					},
+					"IATASubtypeCode": {
+						"description": "Information about the IATA subtype classification for the IATA Aircraft Subtype. Use SSIM Appendix A.",
+						"type": "string"
+					},
+					"IATATypeCode": {
+						"description": "Information about the Aircraft Transport type using IATA format. e.g. 743 for a Boeing 747-300.",
+						"type": "string"
+					},
+					"ICAOTypeCode": {
+						"description": "Information about the Aircraft type using ICAO format. e.g. B743 for a Boeing 747-300.",
+						"type": "string"
+					},
+					"Registration": {
+						"description": "Information about the registration of the Aircraft Transport.",
+						"type": "string"
+					}
+				},
+				"additionalProperties": false
+			}
+		}
+}

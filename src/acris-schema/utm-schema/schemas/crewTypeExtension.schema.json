@@ -1,0 +1,15 @@
+{
+	"title": "CrewType",
+	"description": "Information about the different types of crew on the flight",
+	"type": "object",
+	"properties": {
+		"CrewType": {
+			"description": "Information about the categories of crew for which the count is provided",
+			"type": "string"
+		},
+		"CrewTypeCount": {
+			"description": "Information about the count of crew of a particular type on the Aircraft",
+			"type": "integer"
+		}
+	}
+}

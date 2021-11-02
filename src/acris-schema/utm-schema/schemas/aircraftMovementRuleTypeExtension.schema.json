@@ -1,0 +1,13 @@
+{
+	"title": "AircraftMovementRuleType",
+	"description": "The type of flight rule that a pilot intends to fly. ICAO Doc 4444.\nI if it is intended that the entire flight will be operated under the IFR\nV if it is intended that the entire flight will be operated under the VFR\nY if the flight initially will be operated under the IFR, followed by one or more subsequent changes of flight rules\nZ if the flight initially will be operated under the VFR, followed by one or more subsequent changes of flight rules",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"type": "string"
+		},
+		"Description": {
+			"type": "string"
+		}
+	}
+}

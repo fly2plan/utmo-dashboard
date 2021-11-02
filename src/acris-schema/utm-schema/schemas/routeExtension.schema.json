@@ -1,0 +1,46 @@
+{
+	"title": "Route",
+	"description": "Information about the Route of the Aircraft Movement",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the route of the aircraft movement.",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Identifier for the route.",
+			"type": "string"
+		},
+		"RequestedFlightLevel": {
+			"description": "Requested flightlevel (in flightlevel number, tens of meters or hundreds of feet). For example F360.",
+			"type": "string"
+		},
+		"RequestedFlightLevelPoint": {
+			"description": "The point at : which a change of Requested Flight Level is required.",
+			"type": "string"
+		},
+		"RouteInternationalDomestic": {
+			"description": "Information that indicates the type of Flight service. Examples include I=international, D=domestic, C=Common Travel Area (Irish Republic and Channel)",
+			"type": "string"
+		},
+		"RouteSegment": {
+			"$ref": "routeSegmentExtension.schema.json"
+		},
+		"RouteText": {
+			"description": "A string of route elements complying with PANS-ATM Item 15c",
+			"type": "string"
+		},
+		"StandardInstrumentDeparture": {
+			"description": "Information about a Standard Instrument Departure ending at a designated point. For example E.g. KOGAL1A and KOGAL.",
+			"type": "string"
+		},
+		"TrueAirspeed": {
+			"description": "True airspeed (in kilometers per hours or knots).",
+			"type": "string"
+		},
+		"TrueAirspeedPoint": {
+			"description": "The point at which a change of airspeed is requested.",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"title": "WakeTurbulenceCategory",
+	"description": "Wake turbulence category\nThe message shall indicate the wake turbulence category of that aircraft type. The IFPS shall accept only the following 4 wake turbulence categories:\nL (light), M (medium), H (heavy) or J (super).\nL Shall be inserted for an aircraft with a maximum certified take off mass of 7000 kg or less.\nM Shall be inserted for an aircraft with a maximum certified take off mass of less than 136000 kg but more than 7000 kg.\nH Shall be inserted for an aircraft with a maximum certified take off mass of less than 560000kg but more than 136000 kg.\nJ Shall be inserted for an aircraft with a maximum certified take off mass of 560000kg or more.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"type": "string"
+		},
+		"Description": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

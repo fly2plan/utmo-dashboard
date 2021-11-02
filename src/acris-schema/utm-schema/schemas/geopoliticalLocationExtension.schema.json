@@ -1,0 +1,21 @@
+{
+	"title": "GeopoliticalLocation",
+	"description": "Information about the geopolitical named location reference system used in the specification of a Location.",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the geopolitical named location reference system used in the specification of a Location.",
+			"type": "string"
+		},
+		"GeopoliticalLocationType": {
+			"type": "array",
+			"items": {
+				"$ref": "geopoliticalLocationTypeExtension.schema.json"
+			}
+		},
+		"Name": {
+			"description": "Name of the geopolitical named location reference system used in the specification of a Location.",
+			"type": "string"
+		}
+	}
+}

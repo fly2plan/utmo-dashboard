@@ -1,0 +1,69 @@
+{
+	"title": "DroneAircraftTransport",
+	"type": "object",
+	"description": "Information about the Aircraft (Aircraft Transport) used in the Aircraft Movement/Flight",
+	"properties": {
+		"AircraftDescription": {
+			"description": "Aircraft Description",
+			"type": "string"
+		},
+		"AircraftTransportEquipment": {
+			"type": "array",
+			"items": {
+				"$ref": "aircraftTransportEquipmentExtension.schema.json"
+			}
+		},
+		"DroneAircraftTransportIdentification": {
+			"type": "object",
+			"description": "Information about the identifiers used to identify the Aircraft Transport",
+			"properties": {
+				"AircraftBodyType": {
+					"description": "Information about the Aircraft Transport's Body Type",
+					"type": "string"
+				},
+				"AircraftVersion": {
+					"description": "Information about the version of the Aircraft Transport",
+					"type": "string"
+				},
+				"CodeRequired": {
+					"description": "Information that describes the required code that identifies the Aircraft Transport",
+					"type": "string"
+				},
+				"GeneralTypeCode": {
+					"description": "Information about the general Aircraft Type Code",
+					"type": "string"
+				},
+				"GroupCode": {
+					"description": "Information on the group code for the Aircraft Transport",
+					"type": "string"
+				},
+				"OtherIdentifier": {
+					"description": "Other non specific identifier, as may be specified in FPL Messages.",
+					"type": "string"
+				},
+				"Registration": {
+					"description": "Information about the registration of the Aircraft Transport.",
+					"type": "string"
+				}
+			}
+		},
+		"DroneAircraftTransportType": {
+			"type": "array",
+			"items": {
+				"$ref": "droneAircraftTransportTypeExtension.schema.json"
+			}
+		},
+		"FutureMaximumTakeOffWeight": {
+			"description": "Future max takeoff weight",
+			"type": "integer"
+		},
+		"GuidanceRequired": {
+			"description": "Information on whether some guidance is required for the Aircraft Transport",
+			"type": "boolean"
+		},
+		"Mode": {
+			"description": "Information about the mode of transport",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"title": "PierFacility",
+	"description": "A terminal pier infrastructure facility is a raised structure, including bridge and building supports and walkways, typically supported by widely spread piles or pillars.",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the pier on which the gate being used to board a flight is located",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Information about pier on which the gate being used to board a flight is located",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,177 @@
+{
+	"title": "AirportFacility",
+	"description": "Information about the Host Airport",
+	"type": "object",
+	"properties": {
+		"IATAIdentifier": {
+			"description": "The code assigned to the facility (airport facility) by IATA to the Host Airport",
+			"type": "string"
+		},
+		"RunwayFacility": {
+			"description": "Information about the runway used by this flight",
+			"type": "object",
+			"properties": {
+				"RunwayIdentifier": {
+					"description": "Runway identifier. For example, 27L, 09R, 23.",
+					"type": "string"
+				}
+			}
+		},
+		"StandFacility": {
+			"description": "Information about the stands used by this flight",
+			"type": "object",
+			"properties": {
+				"ArrivalStand": {
+					"description": "Information about the stand the Aircraft used directly after landing which is not updated by ground movements. Stand/parking area at which an aircraft originally parked on arrival at the Airport and from which passengers would have disembarked.",
+					"type": "string"
+				},
+				"CoachingIsRequired": {
+					"description": "Information which indicates if coaching service is required or not. By default, omission of this element will imply that coaching is not required.",
+					"type": "boolean"
+				},
+				"ProvisionalStandNumber": {
+					"description": "Stand number provisionally allocated to the Aircraft Movement",
+					"type": "string"
+				},
+				"StandHoldConflictingStand": {
+					"description": "Information about stand hold conflicting stand. Stand/parking area which is causing a hold condition to exist for a particular aircraft. In the case of a standard hold, the conflicting stand will always be the same as the main allocated stand but for adjacency holds, it may not be immediately obvious which adjacent stand is causing the hold and so it is explicitly named here.",
+					"type": "string"
+				},
+				"StandHoldRequired": {
+					"description": "Information on whether a stand hold is required. True=aircraft must wait for allocated stand to become vacant, False=aircraft may come on stand immediately. By default, omission of this element will imply that a hold is not required.",
+					"type": "boolean"
+				},
+				"StandLocation": {
+					"description": "Location of the stand",
+					"type": "string"
+				},
+				"StandNumber": {
+					"description": "Stand number",
+					"type": "string"
+				},
+				"StandType": {
+					"description": "Type of stand",
+					"type": "string"
+				}
+			}
+		},
+		"TerminalFacility": {
+			"description": "Details of a specific terminal used by the flight",
+			"type": "object",
+			"properties": {
+				"Code": {
+					"description": "Code for the Terminal",
+					"type": "string"
+				},
+				"Description": {
+					"description": "Description of the Terminal",
+					"type": "string"
+				},
+				"CheckinZoneFacility": {
+					"type": "object",
+					"description": "Information about the Check-In Zone used by the flight",
+					"properties": {
+						"CheckinEndTime": {
+							"description": "DateTime at which Checkin ended",
+							"type": "string"
+						},
+						"CheckinStartTime": {
+							"description": "DateTime at which Checkin started",
+							"type": "string"
+						},
+						"CheckinStatus": {
+							"description": "Checkin status description",
+							"type": "string"
+						},
+						"CheckinZoneDescription": {
+							"description": "Description of the checkin zone",
+							"type": "string"
+						},
+						"CheckinZoneIdentifier": {
+							"description": "Identifier for the checkin zone for the aircraft movement",
+							"type": "string"
+						}
+					}
+				},
+				"BagItemDeliveryCarousel": {
+					"type": "object",
+					"description": "Information about the Baggage reclaim facilities used by the flight",
+					"properties": {
+						"ActualFirstBagTime": {
+							"description": "Actual time at which the first bag is received",
+							"type": "string"
+						},
+						"ActualLastBagTime": {
+							"description": "Actual time at which the last bag is received",
+							"type": "string"
+						},
+						"BaggageReclaimStatus": {
+							"description": "Information on the status of the Baggage reclaim",
+							"type": "string"
+						},
+						"CarouselNumber": {
+							"description": "Information about the Carousel Number from which the Bag Item will be delivered",
+							"type": "string"
+						},
+						"ConveyorNumber": {
+							"description": "Information about the Conveyor Number from which the Bag Item will be delivered",
+							"type": "string"
+						},
+						"LegacyFIDSCheckinZone": {
+							"description": "Information about the Legacy FIDS Check-in Zone from which the Bag Item will be delivered",
+							"type": "string"
+						},
+						"SecondaryCarouselNumber": {
+							"description": "Information about the secondary Carousel Number from which the Bag Item will be delivered",
+							"type": "string"
+						}
+					}
+				},
+				"GateFacility": {
+					"type": "object",
+					"description": "Information about the gates used by the flight",
+					"properties": {
+						"GateFacilityIdentification": {
+							"$ref": "gateFacilityIdentificationExtension.schema.json"
+						},
+						"GeneralRemarks": {
+							"description": "Information about general remarks",
+							"type": "string"
+						},
+						"PreviousGate": {
+							"description": "Previous Gate number after a late change has been made.",
+							"type": "string"
+						},
+						"RemoteOperationGate": {
+							"description": "Information about the additional location used to transfer passengers to or from remote parking positions",
+							"type": "string"
+						},
+						"SecondaryGateNumber": {
+							"description": "Secondary Gate Number",
+							"type": "string"
+						},
+						"StaffReadinessStatus": {
+							"$ref": "staffReadinessStatusExtension.schema.json"
+						},
+						"GateFacilityOperationalTimes": {
+							"$ref": "gateFacilityOperationalTimesExtension.schema.json"
+						},
+						"PassengerBoardingStatus": {
+							"$ref": "passengerBoardingStatusExtension.schema.json"
+						},
+						"PassengerGateInstruction": {
+							"$ref": "passengerGateInstructionExtension.schema.json"
+						},
+						"PierFacility": {
+							"$ref": "pierFacilityExtension.schema.json"
+						},
+						"AirJetty": {
+							"$ref": "airJettyExtension.schema.json"
+						}
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}

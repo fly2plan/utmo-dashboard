@@ -1,0 +1,15 @@
+{
+	"title": "ScheduledAircraftMovementStatus",
+	"description": "Information about the Scheduled Aircraft Movement Status. Also referred to as Flight Plan status.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"description": "Code of the Scheduled Aircraft Movement Status. Also referred to as Flight Plan status.",
+			"type": "string"
+		},
+		"Description": {
+			"description": "Description of the Scheduled Aircraft Movement Status. Also referred to as Flight Plan status.",
+			"type": "string"
+		}
+	}
+}

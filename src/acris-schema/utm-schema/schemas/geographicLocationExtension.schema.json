@@ -1,0 +1,18 @@
+{
+	"title": "GeographicLocation",
+	"description": "Information about the geospatial coordinate location.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"description": "Code for the geospatial coordinate location.",
+			"type": "string"
+		},
+		"Name": {
+			"description": "Name of the geospatial coordinate location.",
+			"type": "string"
+		},
+		"SpatialReferenceDefinition": {
+			"$ref": "spatialReferenceDefinitionExtension.schema.json"
+		}
+	}
+}

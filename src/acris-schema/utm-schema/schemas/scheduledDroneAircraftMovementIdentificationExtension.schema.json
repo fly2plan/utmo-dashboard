@@ -1,0 +1,19 @@
+{
+	"title": "ScheduledDroneAircraftMovementIdentification",
+	"description": "Information about the identifiers used for the flight",
+	"type": "object",
+	"properties": {
+		"Identifier": {
+			"description": "Unique Flight plan identifier assigned by the Initial Flight Plan Processing System (IFPS).",
+			"type": "string"
+		},
+		"ScheduledDateTime": {
+			"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+			"type": "string"
+		},
+		"SystemIdentifier": {
+			"description": "Information about a unique identifier assigned by the Airport Party's Operational Database System (AODB). It is also the numeric identifier assigned to every Aircraft Ground Movement by the AODB which provides a single unique key to identify a particular Ground Movement record.",
+			"type": "string"
+		}
+	}
+}

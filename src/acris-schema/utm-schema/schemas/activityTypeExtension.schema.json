@@ -1,0 +1,13 @@
+{
+	"title": "ActivityType",
+	"type": "object",
+	"description": "Type of mission - Commercial, Recreational.",
+	"properties": {
+		"Description": {
+			"type": "string"
+		},
+		"Value": {
+			"type": "string"
+		}
+	}
+}

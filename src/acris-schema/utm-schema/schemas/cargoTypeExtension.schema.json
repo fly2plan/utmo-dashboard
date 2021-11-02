@@ -1,0 +1,15 @@
+{
+	"title": "CargoType",
+	"description": "Information about the different types of cargo on the flight",
+	"type": "object",
+	"properties": {
+		"CargoCode": {
+			"description": "Information about the categories of cargo for which the count is provided",
+			"type": "string"
+		},
+		"CargoDescription": {
+			"description": "Description of the categories of cargo for which the count is provided",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"title": "ScheduledAircraftMovement",
+	"description": "Information about the scheduled Aircraft Movement/Flight, often known as the Flight Plan for a specific aircraft movement.",
+	"type": "object",
+	"properties": {
+		"AlternateAirport": {
+			"description": "Name and location of alternate Airport if no ICAO location exists (Also referred to as ALTNZ)",
+			"type": "string"
+		},
+		"DepartureAirportICAOCode": {
+			"description": "ICAO identifier of the Airport of departure",
+			"type": "string"
+		},
+		"DestinationAirportICAOCode": {
+			"description": "ICAO identifier of the destination Airport",
+			"type": "string"
+		},
+		"EstimatedDuration": {
+			"description": "Total estimated elapsed time in hours and minutes. For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [DOC 4444]",
+			"type": "string"
+		},
+		"EstimatedTimeofArrival": {
+			"type": "string"
+		},
+		"OtherInformation": {
+			"description": "Other necessary information for the scheduled aircraft movement. [DOC 4444]",
+			"type": "string"
+		},
+		"Remark": {
+			"description": "Plain language remarks, as ICAO field 18 RMK/.",
+			"type": "string"
+		},
+		"ScheduledAircraftMovementIdentification": {
+			"type": "object",
+			"description": "Information about the identifiers used for the flight",
+			"properties": {
+				"AircraftMovementRuleType": {
+					"$ref": "aircraftMovementRuleTypeExtension.schema.json"
+				},
+				"AircraftMovementType": {
+					"$ref": "aircraftMovementTypeExtension.schema.json"
+				},
+				"AirTrafficControlCallsign": {
+					"description": "Information on Aircraft Callsign as used in flight plans and all Air Traffic Control interfaces. It is a combination of ATC_Flight_Number and ATC_Operator",
+					"type": "string"
+				},
+				"IATAFlightNumber": {
+					"description": "Information about the IATA number for the Aircraft Movement",
+					"type": "string"
+				},
+				"IATAOperatorIdentifier": {
+					"description": "Information about the IATA code assigned to an Operator of an Aircraft Movement",
+					"type": "string"
+				},
+				"ICAOIdentifier": {
+					"description": "The ICAO identification for an Aircraft Movement. A single alphanumeric string giving an ICAO compliant representation of the main movement identifier. This will include a 3 character ICAO carrier code, flight number stripped of leading zeroes where necessary and an optional suffix character.",
+					"type": "string"
+				},
+				"ICAONumber": {
+					"description": "Information about the ICAO number for the Aircraft Movement.",
+					"type": "string"
+				},
+				"Identifier": {
+					"description": "Unique Flight plan identifier assigned by the Initial Flight Plan Processing System (IFPS).",
+					"type": "string"
+				},
+				"Number": {
+					"description": "Information about the number assigned to an Aircraft Movement",
+					"type": "string"
+				},
+				"ScheduledDateTime": {
+					"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+					"type": "string"
+				},
+				"Suffix": {
+					"description": "Information about the optional characters appended to some flight numbers. Some suffices may have specific meanings e.g. C=charter flight, P=positioning flight, T=training flight, Y=Delayed from yesterday. However, these meanings are not standard across all companies and systems so the IATA Service Type element should be used in preference",
+					"type": "string"
+				},
+				"SystemIdentifier": {
+					"description": "Information about a unique identifier assigned by the Airport Party's Operational Database System (AODB). It is also the numeric identifier assigned to every Aircraft Ground Movement by the AODB which provides a single unique key to identify a particular Ground Movement record.",
+					"type": "string"
+				},
+				"TurnRoundIdentifier": {
+					"description": "Information that identifies a turnaround Aircraft Movement.",
+					"type": "string"
+				}
+			}
+		},
+		"ScheduledAircraftMovementStatus": {
+			"type": "array",
+			"items": {
+				"$ref": "scheduledAircraftMovementStatusExtension.schema.json"
+			}
+		}
+	}
+}

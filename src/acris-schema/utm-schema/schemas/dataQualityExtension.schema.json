@@ -1,0 +1,23 @@
+{
+	"title": "DataQuality",
+	"description": "Information about the data quality of the update",
+	"type": "object",
+	"properties": {
+		"Completeness": {
+			"description": "Whether all relevant items are recorded and all their attributes are populated.",
+			"type": "string"
+		},
+		"Validity": {
+			"description": "Whether data conform to the specified format.",
+			"type": "string"
+		},
+		"UpdateTimestamp": {
+			"description": "The Time the update was made in GMT.",
+			"type": "string"
+		},
+		"UpdatedBy": {
+			"description": "Who made the update.",
+			"type": "string"
+		}
+	}
+}

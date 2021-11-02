@@ -1,0 +1,19 @@
+{
+	"title": "Activity",
+	"description": "Type of mission - Commercial, Recreational.",
+	"type": "object",
+	"properties": {
+		"ActivityType": {
+			"type": "array",
+			"items": {
+				"$ref": "activityTypeExtension.schema.json"
+			}
+		},
+		"Description": {
+			"type": "string"
+		},
+		"Value": {
+			"type": "string"
+		}
+	}
+}

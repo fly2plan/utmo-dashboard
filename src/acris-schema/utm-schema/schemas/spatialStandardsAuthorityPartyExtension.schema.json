@@ -1,0 +1,18 @@
+{
+	"title": "SpatialStandardsAuthorityParty",
+	"description": "Information about the standards authority for the geospatial reference system used in the specification of a Location.",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the standards authority for the geospatial reference system used in the specification of a Location.",
+			"type": "string"
+		},
+		"GeopoliticalLocationHierarchy": {
+			"$ref": "geopoliticalLocationHierarchyExtension.schema.json"
+		},
+		"Name": {
+			"description": "Name of the standards authority for the geospatial reference system used in the specification of a Location.",
+			"type": "string"
+		}
+	}
+}

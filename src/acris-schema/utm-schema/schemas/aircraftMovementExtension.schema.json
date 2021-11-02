@@ -1,0 +1,414 @@
+{
+	"title": "AircraftMovement",
+	"description": "Information about the Aircraft Movement/Flight",
+	"type": "object",
+	"properties": {
+		"AircraftMovementStatus": {
+			"description": "Information about the status of an Aircraft Movement/Flight",
+			"type": "object",
+			"properties": {
+				"Cancelled": {
+					"description": "Information indicating whether an Aircraft Movement is cancelled",
+					"type": "string"
+				},
+				"Cleared": {
+					"description": "Information that indicates that the Aircraft is operationally complete and ready for departure",
+					"type": "string"
+				},
+				"Code": {
+					"description": "Code indicating the status of the flight",
+					"type": "string"
+				},
+				"DeicingStatus": {
+					"description": "Information that indicates if this Flight service has requested a de-icing service.",
+					"type": "string"
+				},
+				"Deleted": {
+					"description": "Flag that indicates that the flight has been deleted",
+					"type": "string"
+				},
+				"OperationalStatus": {
+					"description": "Information that informs the Airline and Airport operational staff concerning the status of an Aircraft Movement Segment.",
+					"type": "string"
+				},
+				"PublicStatus": {
+					"description": "Information about the Aircraft Movement Segment Status list that can be displayed to the public.",
+					"type": "string"
+				},
+				"Regulated": {
+					"description": "Flag that indicates that the flight is regulated",
+					"type": "string"
+				}
+			}
+		},
+		"AircraftMovementIdentification": {
+			"description": "Information about the identifiers used for the flight",
+			"type": "object",
+			"properties": {				
+				"AirTrafficControlCallsign": {
+					"description": "Information on Aircraft Callsign as used in flight plans and all Air Traffic Control interfaces. It is a combination of ATC_Flight_Number and ATC_Operator",
+					"type": "string"
+				},
+				"AircraftMovementCodeShare": {
+					"$ref": "aircraftMovementCodeShareExtension.schema.json"
+				},
+				"DisplayedIdentifier": {
+					"description": "Information about the publicly displayed Aircraft Movement identifier",
+					"type": "string"
+				},
+				"IATAFlightNumber": {
+					"description": "Information about the IATA number for the Aircraft Movement",
+					"type": "string"
+				},
+				"IATAOperatorIdentifier": {
+					"description": "Information about the IATA code assigned to an Operator of an Aircraft Movement",
+					"type": "string"
+				},
+				"ICAOIdentifier": {
+					"description": "The ICAO identification for an Aircraft Movement. A single alphanumeric string giving an ICAO compliant representation of the main movement identifier. This will include a 3 character ICAO carrier code, flight number stripped of leading zeroes where necessary and an optional suffix character.",
+					"type": "string"
+				},
+				"ICAONumber": {
+					"description": "Information about the ICAO number for the Aircraft Movement.",
+					"type": "string"
+				},
+				"Number": {
+					"description": "Information about the number assigned to an Aircraft Movement",
+					"type": "string"
+				},
+				"ScheduledDateTime": {
+					"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+					"type": "string"
+				},
+				"Suffix": {
+					"description": "Information about the optional characters appended to some flight numbers. Some suffices may have specific meanings e.g. C=charter flight, P=positioning flight, T=training flight, Y=Delayed from yesterday. However, these meanings are not standard across all companies and systems so the IATA Service Type element should be used in preference",
+					"type": "string"
+				},
+				"SystemIdentifier": {
+					"description": "Information about a unique identifier assigned by the Airport Party's Operational Database System (AODB). It is also the numeric identifier assigned to every Aircraft Ground Movement by the AODB which provides a single unique key to identify a particular Ground Movement record.",
+					"type": "string"
+				},
+				"TurnRoundIdentifier": {
+					"description": "Information that identifies a turnaround Aircraft Movement.",
+					"type": "string"
+				}
+			}
+		},
+		"ArrivalOrDeparture": {
+			"description": "Information about whether the flight is an Arrival (A) or Departure (D)",
+			"type": "string"
+		},
+		"ArrivalSecurityCheck": {
+			"description": "Information which if set to 'True', indicates that additional security checks are required for the Arrival part of the Movement Segment.",
+			"type": "boolean"
+		},
+		"AutomaticProcessing": {
+			"description": "Information about whether the displayed information should be automatic (time based) or manual (using show to public value)",
+			"type": "string"
+		},
+		"BaggageReclaim": {
+			"description": "Information about the Baggage Reclaim location to be displayed",
+			"type": "string"
+		},
+		"BillingInformation" : 
+		{
+			"type": "object",
+			"description" : "Information about the billing of the flight by the Host Airport",
+			"properties":
+			{
+				"AircraftFEGPEquipped":
+				{
+					"description" : "Flag to indicate that the aircraft is FEGP equipped",
+					"type" : "boolean"
+				},
+				"AircraftPCAEquipped":
+				{
+					"description" : "Flag to indicate that the aircraft is PCA equipped",
+					"type" : "boolean"
+				},
+				"RebatePassengerNumbers":
+				{
+					"description" : "Billing information about the number of passenger rebates for a flight",
+					"type" : "integer"
+				},
+				"RebatePassengerReasonCode":
+				{
+					"description" : "Code to indicate the reason for the rebate",
+					"type" : "string"
+				}
+			}
+		},
+		"CarrierCode": {
+			"description": "IATA code of the airline carrier for the flight",
+			"type": "string"
+		},
+		"CheckinZone": {
+			"description": "Information about the displayed checkin zone. it may be different from the root checkin zone",
+			"type": "string"
+		},
+		"Comments": {
+			"description": "Comments that may be displayed along side other information (e.g. next update time, delayed)",
+			"type": "string"
+		},
+		"ConnectionAircraftMovement": {
+			"type": "object",
+			"description": "Information to be displayed to arriving passengers on an Aircraft Movement about connecting flights",
+			"properties": {
+				"CheckinZone": {
+					"description": "Information about the CheckIn zone displayed for connection aircraft movements. It may be different from the root CheckIn zone",
+					"type": "string"
+				},
+				"ConnectingFlightDestination": {
+					"description": "The destination for the connecting aircraft movement",
+					"type": "string"
+				},
+				"ConnectingFlightNumber": {
+					"description": "Information about the aircraft movement numbers for the connection aircraft movements.",
+					"type": "string"
+				},
+				"EstimatedDateTime": {
+					"description": "The Estimated Operating DateTime to be displayed",
+					"type": "string"
+				},
+				"Gate": {
+					"description": "Information about the gate displayed for connection movements. It may be different from the root gate",
+					"type": "string"
+				},
+				"OperatedDateTime": {
+					"description": "The Actual Operating DateTime to be displayed",
+					"type": "string"
+				},
+				"Order": {
+					"description": "Information about the counter that indicates the display order of connecting aircraft movements",
+					"type": "integer"
+				},
+				"ScheduledDateTime": {
+					"description": "The Scheduled Operating DateTime to be displayed",
+					"type": "string"
+				},
+				"Terminal": {
+					"description": "Information about the Terminal of the Gate/CheckIn zone for the connecting flight",
+					"type": "string"
+				},
+				"TransferBagCount": {
+					"description": "Number of transferring bags for the connecting flight",
+					"type": "integer"
+				},
+				"TransferPassengerCount": {
+					"description": "Number of transferring passengers for the connecting flight",
+					"type": "integer"
+				}
+			}
+		},
+		"DeicingMode": {
+			"description": "The location type at which de-icing will occur. It must be one of two values. STAND, where the deicing will be performed on-stand or PAD where the deicing will be performed at a remote pad (e.g. JEDI or VADER)",
+			"type": "string"
+		},
+		"DeicingPadLocation": {
+			"description": "The pad at which deicing will/has occurred. This should only be populated when DeicingMode is PAD.",
+			"type": "string"
+		},
+		"DeicingRigEquipment": {
+			"description": "The identifier of the Rig equipment. This could be the asset number of the de-icing equipment where the equipment is owned by Airport (from its Asset Ledger). Where Airport does not own the equipment, this field should be omitted.",
+			"type": "string"
+		},
+		"DeicingStandLocation": {
+			"description": "The Stand at which deicing will/has occurred. This should only be populated when DeicingMode is STAND.",
+			"type": "string"
+		},
+		"DepartureSecurityCheck": {
+			"description": "Information which if set to 'True', indicates that additional security checks are required for the Departure part of the Aircraft Movement.",
+			"type": "boolean"
+		},
+		"Description": {
+			"description": "Free text information about the Aircraft Movement",
+			"type": "string"
+		},
+		"Display": {
+			"description": "Information that indicates whether the aircraft movement information should be shown to the public",
+			"type": "boolean"
+		},
+		"DisplayFromTime": {
+			"description": "Information that indicates after what time the aircraft movement is shown to the public",
+			"type": "string"
+		},
+		"DisplayUntilTime": {
+			"description": "Information that indicates after what time the aircraft movement is no longer shown to the public",
+			"type": "string"
+		},
+		"DivertAirport": {
+			"description": "Information about the Diversion Airport Facility",
+			"type": "string"
+		},
+		"DivertAirportFacilityCode": {
+			"description": "Information about the code of the Airport Facility to which an Aircraft Transport has been diverted",
+			"type": "string"
+		},
+		"DivertIndicator": {
+			"description": "Information about the indicator for a diversion",
+			"type": "string"
+		},
+		"DivertReason": {
+			"description": "Information on the reason for the diversion",
+			"type": "string"
+		},
+		"DivertReasonCode": {
+			"description": "Information that describes the code for the divert reason",
+			"type": "string"
+		},
+		"EstimatedDateTime": {
+			"description": "The Estimated Operating DateTime to be displayed",
+			"type": "string"
+		},
+		"FlightClassification": {
+			"description": "IATA Service Type Classification",
+			"type": "string"
+		},
+		"FlightNumber": {
+			"description": "Information about the displayed aircraft movement. It includes operator code, formatted flight number and optional suffix",
+			"type": "string"
+		},
+		"FlightOriginOrDestination": {
+			"description": "The origin/destination for the aircraft movement",
+			"type": "string"
+		},
+		"FromStand": {
+			"description": "Origin Stand for a Ground Movement i.e. where the Aircraft Transport was moving from.",
+			"type": "string"
+		},
+		"Gate": {
+			"description": "Information about the gate that is displayed.",
+			"type": "string"
+		},
+		"HandlingAgentParty": {
+			"type": "object",
+			"description": "Information about a handling agent",
+			"properties": {
+				"CateringLoaderNumber": {
+					"description": "Catering Loader number",
+					"type": "string"
+				},
+				"Code": {
+					"description": "Information about the Handling Agent Code",
+					"type": "string"
+				},
+				"HandlingCrewNumber": {
+					"description": "Information on the Handling Crew's number",
+					"type": "string"
+				},
+				"Name": {
+					"description": "Name of the Handling Agent",
+					"type": "string"
+				},
+				"PassengerHandlingTeamIdentifier": {
+					"description": "Information on the Passenger Handling Team Identifier",
+					"type": "string"
+				},
+				"Type": {
+					"description": "Role Type of the Handling Agent (e.g. Baggage Handler)",
+					"type": "string"
+				}
+			}
+		},
+		"IATAIrregularityDetails": {
+			"type": "object",
+			"description": "Details about a specific IATA Irregularity Event (e.g. a delay event)",
+			"properties": {
+				"Duration": {
+					"description": "Information about the duration of an irregularity, which will typically be a value expressed in hours and minutes e.g. PT1H20M is 1 hour 20 minutes, or minutes only as appropriate. There are occasions where an irregularity code is reported without any associated duration e.g. it is still being calculated but the underlying cause is known. When this occurs, the reason code will be reported with a nil duration to distinguish it from any an irregularity that has been explicitly reported wtih a duration of zero (which can happen)",
+					"type": "integer"
+				},
+				"NumericCode": {
+					"description": "Information about IATA assigned two digit numeric code for expressing the reason for delays, diversions and other operational irregularities. Numeric codes are considered by IATA to be primary for the reporting of irregularity information.",
+					"type": "string"
+				}
+			}
+		},
+		"InboundOrigin": {
+			"description": "The IATA code for the originating airport facility for the movement (flight).\nAlso referred to as Aerodrome of Departure. [FIXM]",
+			"type": "string"
+		},
+		"LinkedAircraftMovement": {
+			"type": "object",
+			"description": "Information about the linked flight (i.e. inbound or outbound flight using the same Aircraft Transport)",
+			"properties": {
+				"AircraftOnGround": {
+					"description": "Information that indicates whether the linked Aircraft Movement has operated. Thus, in the case of arrival aircraft movements, it indicates whether the linked departure aircraft movement has gone airborne, and in the case of a departure aircraft movement it indicates whether the linked arrival aircraft movement has landed.",
+					"type": "boolean"
+				},
+				"ArrivalOrDeparture": {
+					"description": "Information about whether the linked flight is an Arrival (A) or Departure (D)",
+					"type": "string"
+				},
+				"IATAFlightNumber": {
+					"description": "Information about the IATA number for the Aircraft Movement",
+					"type": "string"
+				},
+				"IATAOperatorIdentifier": {
+					"description": "Information about the IATA code assigned to the operator of an Aircraft Movement",
+					"type": "string"
+				},
+				"ICAOIdentifier": {
+					"description": "The ICAO identification for an Aircraft Movement. A single alphanumeric string giving an ICAO compliant representation of the main movement identifier. This will include a 3 character ICAO carrier code, flight number stripped of leading zeroes where necessary and an optional suffix character.",
+					"type": "string"
+				},
+				"ICAONumber": {
+					"description": "Information about the ICAO number for the Aircraft Movement.",
+					"type": "integer"
+				},
+				"ScheduledDateTime": {
+					"description": "Information about the scheduled time of Arrival or Departure for the linked Aircraft Movement",
+					"type": "string"
+				},
+				"Suffix": {
+					"description": "Information about the optional characters appended to some flight numbers. Some suffices may have specific meanings e.g. C=charter flight, P=positioning flight, T=training flight, Y=Delayed from yesterday. However, these meanings are not standard across all companies and systems so the IATA Service Type element should be used in preference",
+					"type": "string"
+				},
+				"SystemIdentifier": {
+					"description": "Information about a unique identifier assigned by the Airport Party's Operational Database System (AODB).",
+					"type": "string"
+				}
+			}
+		},
+		"OperatedDateTime": {
+			"description": "The Actual Operating DateTime to be displayed",
+			"type": "string"
+		},
+		"OperationalTimes": {
+			"description": "Information about the operational times for the aircraft movement/flight",
+			"$ref": "operationalTimesExtension.schema.json"
+		},
+		"OutboundDestination": {
+			"description": "The IATA code for the destination airport facility for the movement (flight).\nAlso referred to as Aerodrome of Destination [FIXM]",
+			"type": "string"
+		},
+		"Priority": {
+			"description": "Information on the Flight Service Priority on allocated Slot",
+			"type": "string"
+		},
+		"PriorityDisplay": {
+			"description": "Information that indicates when the aircraft movement is promoted on the display device",
+			"type": "boolean"
+		},
+		"RepeatNumber": {
+			"description": "information about the repeat or departure attempt number for an Aircraft Movement.",
+			"type": "string"
+		},
+		"ScheduledDateTime": {
+			"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+			"type": "string"
+		},
+		"SpecialNeedsIndicator": {
+			"description": "Information that indicates that the Flight Service requires special handling including wheelchairs. This is a repeating group of up to 3 codes (to allow multiple codes to be provided)",
+			"type": "string"
+		},
+		"TechnicalStop": {
+			"description": "Information on whether an Aircraft Movement Stop is a Technical (transit) Stop. If true, this is a Technical Stop. If false, it is not a Technical Stop.",
+			"type": "boolean"
+		},
+		"Terminal": {
+			"description": "Information about the terminal related to the aircraft movement",
+			"type": "string"
+		}
+	}
+}

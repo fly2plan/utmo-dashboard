@@ -1,0 +1,13 @@
+{
+	"title": "AircraftMovementType",
+	"description": "The type of flight when so required by the appropriate ATS authority. ICAO Doc 4444.\nS if scheduled air service\nN if non-scheduled air transport operation\nG if general aviation\nM if military\nX if other than any of the defined categories above.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"type": "string"
+		},
+		"Description": {
+			"type": "string"
+		}
+	}
+}

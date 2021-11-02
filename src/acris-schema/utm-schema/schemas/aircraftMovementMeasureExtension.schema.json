@@ -1,0 +1,30 @@
+{
+	"title": "AircraftMovementMeasure",
+	"description": "Information that enable a Party to track the performance of the Aircraft Movement.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"description": "Code to identify the Aircraft Movement Measure",
+			"type": "string"
+		},
+		"Description": {
+			"description": "Description of the Aircraft Movement Measure",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Identifier for the Aircraft Movement Measure",
+			"type": "string"
+		},
+		"Name": {
+			"description": "Name assigned to the Aircraft Movement Measure",
+			"type": "string"
+		},
+		"Title": {
+			"description": "Title assigned to the Aircraft Movement Measure",
+			"type": "string"
+		},
+		"Value": {
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"title": "RouteSegment",
+	"description": "Information about the Route of the Aircraft Movement",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the route of the aircraft movement.",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Identifier for the route segment.",
+			"type": "string"
+		},
+		"RequestedFlightLevel": {
+			"description": "Requested flightlevel (in flightlevel number, tens of meters or hundreds of feet). For example F360.",
+			"type": "string"
+		},
+		"RequestedFlightLevelPoint": {
+			"description": "The point at : which a change of Requested Flight Level is required.",
+			"type": "string"
+		},
+		"TrueAirspeed": {
+			"description": "True airspeed (in kilometers per hours or knots).",
+			"type": "string"
+		},
+		"TrueAirspeedPoint": {
+			"description": "The point at which a change of airspeed is requested.",
+			"type": "string"
+		}
+	}
+}

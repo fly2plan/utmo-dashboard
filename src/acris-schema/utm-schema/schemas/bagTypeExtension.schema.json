@@ -1,0 +1,15 @@
+{
+	"title": "BagType",
+	"description": "Information about the different types of bags on the flight",
+	"type": "object",
+	"properties": {
+		"BagCode": {
+			"description": "Information about the categories of bags for which the count is provided",
+			"type": "string"
+		},
+		"BagDescription": {
+			"description": "Description of the categories of bags for which the count is provided",
+			"type": "string"
+		}
+	}
+}

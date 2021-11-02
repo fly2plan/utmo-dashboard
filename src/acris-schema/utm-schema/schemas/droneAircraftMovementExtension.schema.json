@@ -1,0 +1,147 @@
+{
+	"title": "DroneAircraftMovement",
+	"description": "Information about the Drone Aircraft Movement/Flight",
+	"type": "object",
+	"properties": {
+		"AircraftMovementStatus": {
+			"description": "Information that indicates the displayed status of the aircraft movement",
+			"type": "string"
+		},
+		"ArrivalOrDeparture": {
+			"description": "Information about whether the flight is an Arrival (A) or Departure (D)",
+			"type": "string"
+		},
+		"Comments": {
+			"description": "Comments that may be displayed along side other information (e.g. next update time, delayed)",
+			"type": "string"
+		},
+		"Description": {
+			"description": "Free text information about the Aircraft Movement",
+			"type": "string"
+		},
+		"DestinationLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "locationExtension.schema.json"
+			}
+		},
+		"DroneAircraftMovementIdentification": {
+			"type": "object",
+			"description": "Information about the identifiers used for the flight",
+			"properties": {
+				"DisplayedIdentifier": {
+					"description": "Information about the publicly displayed Aircraft Movement identifier",
+					"type": "string"
+				},
+				"Number": {
+					"description": "Information about the number assigned to an Aircraft Movement",
+					"type": "string"
+				},
+				"ScheduledDateTime": {
+					"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+					"type": "string"
+				}
+			}
+		},
+		"DroneAircraftMovementStatus": {
+			"type": "object",
+			"description": "Information about the status of an Aircraft Movement/Flight",
+			"properties": {
+				"Cancelled": {
+					"description": "Information indicating whether an Aircraft Movement is cancelled",
+					"type": "string"
+				},
+				"Cleared": {
+					"description": "Information that indicates that the Aircraft is operationally complete and ready for departure",
+					"type": "string"
+				},
+				"Code": {
+					"description": "Code indicating the status of the flight",
+					"type": "string"
+				},
+				"DeicingStatus": {
+					"description": "Information that indicates if this Flight service has requested a de-icing service.",
+					"type": "string"
+				},
+				"Deleted": {
+					"description": "Flag that indicates that the flight has been deleted",
+					"type": "string"
+				},
+				"OperationalStatus": {
+					"description": "Information that informs the Airline and Airport operational staff concerning the status of an Aircraft Movement Segment.",
+					"type": "string"
+				},
+				"Public Status": {
+					"description": "Information about the Aircraft Movement Segment Status list that can be displayed to the public.",
+					"type": "string"
+				},
+				"Regulated": {
+					"description": "Flag that indicates that the flight is regulated",
+					"type": "string"
+				}
+			}
+		},
+		"DroneOperatorParty": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "Information about the operator operating the flight",
+				"properties": {
+					"DroneOperatorPartyIdentification": {
+						"type": "object",
+						"description": "Information about the identifiers for the party operating the flight",
+						"properties": {
+							"Description": {
+								"description": "Information that describes a drone operator party.",
+								"type": "string"
+							},
+							"Identifier": {
+								"description": "Information that identifies a drone operator party.",
+								"type": "string"
+							}
+						}
+					},
+					"Remark": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		"FlightOriginOrDestination": {
+			"description": "The origin/destination for the aircraft movement",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Globally unique identifier for the drone aircraft movement.",
+			"type": "string"
+		},
+		"OperatedDateTime": {
+			"description": "The Actual Operating DateTime to be displayed",
+			"type": "string"
+		},
+		"OperationalTimes": {
+			"description": "Information about the operational times for the aircraft movement/flight",
+			"$ref": "operationalTimesExtension.schema.json"
+		},
+		"OriginLocation": {
+			"type": "array",
+			"items": {
+				"$ref": "locationExtension.schema.json"
+			}
+		},
+		"Priority": {
+			"description": "Information on the Flight Service Priority on allocated Slot",
+			"type": "string"
+		},
+		"Route": {
+			"type": "array",
+			"items": {
+				"$ref": "routeExtension.schema.json"
+			}
+		},
+		"ScheduledDateTime": {
+			"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "title": "GeopoliticalLocationHierarchy",
+    "type": "object",
+    "properties": {
+        "Description": {
+            "type": "string"
+        },
+        "GeopoliticalLocationCategory": {
+            "$ref": "geopoliticalLocationCategoryExtension.schema.json"
+        },
+        "Name": {
+            "type": "string"
+        }
+    }
+}

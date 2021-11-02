@@ -1,0 +1,23 @@
+{
+	"title": "GateFacilityOperationalTimes",
+	"description": "Information about the operational times for the Gate Facility",
+	"type": "object",
+	"properties": {
+		"ActualGateCloseTime": {
+			"description": "Actual time at which the gate closed",
+			"type": "string"
+		},
+		"ActualGateOpenTime": {
+			"description": "Actual time at which the gate opened",
+			"type": "string"
+		},
+		"GatingDueDateTime": {
+			"description": "Information about the gating due date and time",
+			"type": "string"
+		},
+		"PlannedGateOpenTime": {
+			"description": "Expected time at which the gate will open",
+			"type": "string"
+		}
+	}
+}

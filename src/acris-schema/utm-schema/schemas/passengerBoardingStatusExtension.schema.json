@@ -1,0 +1,11 @@
+{
+	"title": "PassengerBoardingStatus",
+	"description": "Information about the status of passenger boarding",
+	"type": "object",
+	"properties": {
+		"StatusAtGate": {
+			"description": "Information about local boarding status at gate",
+			"type": "string"
+		}
+	}
+}

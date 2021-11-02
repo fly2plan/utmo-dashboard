@@ -1,0 +1,19 @@
+{
+	"title": "DroneAircraftTransportType",
+	"description": "The airframe/performance characteristics of the drone.\n\nValue, Name, Description:\nfixedWing\tFixed Wing\tA craft with a rigid wing/airfoil - it generates lift through its forward airspeed.\nrotary\tRotary\tA craft with one or more rotorblades - it generates lift through the rotation of the blades.",
+	"type":"object",
+	"properties": {
+		"Description": {
+			"description": "Description of the drone aircraft transport",
+			"type": "string"
+		},
+		"Name": {
+			"description": "Name of the drone aircraft transport",
+			"type": "string"
+		},
+		"Value": {
+			"description": "Value of the drone aircraft transport",
+			"type": "string"
+		}
+	}
+}

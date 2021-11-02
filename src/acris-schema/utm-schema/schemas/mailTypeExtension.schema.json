@@ -1,0 +1,15 @@
+{
+	"title": "MailType",
+	"description": "Information about the different types of mail on the flight",
+	"type": "object",
+	"properties": {
+		"MailCode": {
+			"description": "Information about the categories of mail for which the count is provided",
+			"type": "string"
+		},
+		"MailDescription": {
+			"description": "Description of the categories of mail for which the count is provided",
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"title": "SpatialReferenceSystem",
+	"description": "Information about the coordinate reference system in use. It may also be known locally as the Map Grid Reference System.",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"description": "Description of the spatial reference system used in the specification of a Location e.g. WGS84 for code 4326.",
+			"type": "string"
+		},
+		"Identifier": {
+			"description": "Identifier for the spatial reference system used in the specification of a Location e.g. 4326 for WGS84.",
+			"type": "string"
+		},
+		"SpatialReferenceSystemType": {
+			"type": "array",
+			"items": {
+				"$ref": "spatialReferenceSystemTypeExtension.schema.json"
+			}
+		},
+		"SpatialStandardsAuthorityParty": {
+			"type": "array",
+			"items": {
+				"$ref": "spatialStandardsAuthorityPartyExtension.schema.json"
+			}
+		}
+	}
+}

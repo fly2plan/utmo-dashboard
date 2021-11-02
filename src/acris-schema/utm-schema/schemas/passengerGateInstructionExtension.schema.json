@@ -1,0 +1,11 @@
+{
+	"title": "PassengerGateInstruction",
+	"description": "Information about the instructions given to passengers about how to proceed at Airport gates.",
+	"type": "object",
+	"properties": {
+		"GoToPassportControl": {
+			"description": "Information to head towards passport control",
+			"type": "string"
+		}
+	}
+}

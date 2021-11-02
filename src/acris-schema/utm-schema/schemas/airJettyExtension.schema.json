@@ -1,0 +1,15 @@
+{
+	"title": "AirJetty",
+	"description": "A structure used at airports that allows aircraft passengers to board and unboard a plane to the airport's gate.",
+	"type": "object",
+	"properties": {
+		"AirJettyHireCode": {
+			"description": "Information about a Jetty's Hire Code",
+			"type": "string"
+		},
+		"AirJettyType": {
+			"description": "Information about the different types of Air Jetties",
+			"type": "string"
+		}
+	}
+}

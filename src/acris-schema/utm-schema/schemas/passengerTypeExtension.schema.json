@@ -1,0 +1,25 @@
+{
+	"title": "PassengerType",
+	"description": "Information about the different types of passengers on the flight",
+	"type": "object",
+	"properties": {
+		"PassengerType" :
+		{
+			"type": "object",
+			"description" : "Information about the different types of passengers on the flight",
+			"properties":
+			{
+				"PassengerType":
+				{
+					"description" : "Information about the categories of passengers for which the count is provided",
+					"type" : "string"
+				},
+				"PassengerTypeCount":
+				{
+					"description" : "Information about the count of passengers of a particular type on the Aircraft",
+					"type" : "integer"
+				}
+			}
+		}
+	}
+}

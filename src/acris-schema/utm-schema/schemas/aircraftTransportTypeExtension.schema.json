@@ -1,0 +1,22 @@
+{
+	"title": "AircraftTransportType",
+	"description": "Type of aircraft transport",
+	"type": "object",
+	"properties": {
+		"IATASubtypeCode": {
+			"description": "Information about the IATA subtype classification for the IATA Aircraft Subtype. Use SSIM Appendix A.",
+			"type": "string"
+		},
+		"IATATypeCode": {
+			"description": "Transportation type using IATA format. e.g. 743 for a Boeing 747-300. Use SSIM Appendix A.",
+			"type": "string"
+		},
+		"ICAOTypeCode": {
+			"description": "Transportation type using ICAO format. e.g. B743 for a Boeing 747-300.",
+			"type": "string"
+		},
+		"WakeTurbulenceCategory": {
+			"$ref": "wakeTurbulenceCategoryExtension.schema.json"
+		}
+	}
+}

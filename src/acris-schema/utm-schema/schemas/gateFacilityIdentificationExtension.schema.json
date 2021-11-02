@@ -1,0 +1,11 @@
+{
+	"title": "GateFacilityIdentification",
+	"description": "Information about the Gate Facility Identification",
+	"type": "object",
+	"properties": {
+		"Identifier": {
+			"description": "Identifier for the Gate Facility",
+			"type": "string"
+		}
+	}
+}

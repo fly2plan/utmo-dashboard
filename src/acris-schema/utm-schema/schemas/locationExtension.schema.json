@@ -1,0 +1,18 @@
+{
+	"title": "Location",
+	"description": "Location.",
+	"type": "object",
+	"properties": {
+		"GeographicLocation": {
+			"description": "Information about the operational times for the aircraft movement/flight",
+			"$ref": "geographicLocationExtension.schema.json"
+		},
+		"GeopoliticalLocation": {
+			"description": "Information about the geopolitical named location reference system used in the specification of a Location.",
+			"$ref": "geopoliticalLocationExtension.schema.json"
+		},		
+		"Value": {
+			"type": "string"
+		}
+	}
+}

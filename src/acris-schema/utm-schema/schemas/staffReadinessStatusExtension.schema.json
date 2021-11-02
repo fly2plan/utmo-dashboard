@@ -1,0 +1,11 @@
+{
+	"title": "StaffReadinessStatus",
+	"description": "Information about the status of staff readiness for operating the gate.",
+	"type": "object",
+	"properties": {
+		"StaffReadyForGateControl": {
+			"description": "If set, information indicates that staff is ready for gate open event",
+			"type": "boolean"
+		}
+	}
+}

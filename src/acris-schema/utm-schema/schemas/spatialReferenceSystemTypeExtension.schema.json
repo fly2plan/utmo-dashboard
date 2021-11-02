@@ -1,0 +1,15 @@
+{
+	"title": "SpatialReferenceSystemType",
+	"description": "Information about the type of spatial reference system used to specify Location. Values are: Local (to the organisation using it), International, Regional, Global.",
+	"type": "object",
+	"properties": {
+		"Code": {
+			"description": "Values: Local (to the organisation using it), International, Regional, Global.",
+			"type": "string"
+		},
+		"Description": {
+			"description": "Description of the type of spatial reference system used to specify Location. Values are: Local (to the organisation using it), International, Regional, Global.",
+			"type": "string"
+		}
+	}
+}

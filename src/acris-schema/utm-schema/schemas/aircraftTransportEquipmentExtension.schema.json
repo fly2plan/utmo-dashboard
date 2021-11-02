@@ -1,0 +1,45 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "AircraftTransportEquipment",
+	"description": "Information about equipment on board an aircraft.",
+	"type": "object",
+	"properties": {
+		"Description": {
+			"type": "string"
+		},
+		"Identifier": {
+			"type": "string"
+		},
+		"Mode": {
+			"type": "string"
+		},
+		"AircraftTransportEquipmentCategory": {
+			"description": "Category of equipment on board an aircraft. Values can include Primary and Secondary Surveillance Radar, etc.",
+			"type": "object",
+			"properties": {
+				"Description": {
+					"description": "Description of the Aircraft Transport Equipment Category",
+					"type": "string"
+				},
+				"Identifier": {
+					"description": "Identifier of the Aircraft Transport Equipment Category",
+					"type": "string"
+				}
+			}
+		},
+		"AircraftTransportEquipmentType": {
+			"description": "Type of equipment on board an aircraft. Values can include Communications, Navigation, Datalink, Surveillance, Survival.",
+			"type": "object",
+			"properties": {
+				"Description": {
+					"description": "Description of the Aircraft Transport Equipment Type",
+					"type": "string"
+				},
+				"Identifier": {
+					"description": "Identifier of the Aircraft Transport Equipment Type",
+					"type": "string"
+				}
+			}
+		}
+	}
+}
