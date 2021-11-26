@@ -1,10 +1,10 @@
 import Ajv from 'ajv';
-import mergedSchema from '../utm-schema/mergedSchema.json'
+import reducedSchema from '../utm-schema/reducedSchema.json'
 
 const ajv = new Ajv({ schemaId: 'id' });
 ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-04.json'));
 
-const validate = ajv.compile(mergedSchema)
+const validate = ajv.compile(reducedSchema)
 
 const resolved = new Proxy({}, {
   get: (target: any, name) => name in target ? target[name] : false

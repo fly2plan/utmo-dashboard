@@ -184,7 +184,7 @@ const Display = ({ flightPlanFields, updateField }: any) => {
 const FlightPlan = ({ validate }: any) => {
   const user = useUser();
   const [validated, setValidated] = useState(false);
-  const flightPlanFieldsRef = useRef(validate.schema.definitions.ACRISFlight.properties);
+  const flightPlanFieldsRef = useRef(validate.schema.definitions.UTMFlight.properties);
   const submitFlightPlan = useMutation<AxiosResponse<any, any>, any, any>(
     flightPlan => {
       return API.put('/flightChain', flightPlan, {
