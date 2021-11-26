@@ -1,0 +1,7 @@
+.flight-plan-boolean-field {
+    margin-bottom: 30px;
+}
+
+.flight-plan-div:last-child > .flight-plan-boolean-field {
+    margin-bottom: 0px;
+}

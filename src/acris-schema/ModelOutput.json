@@ -1,0 +1,1012 @@
+{
+	"operatingAirline": {
+		"iataCode": "aa",
+		"icaoCode": "aaa",
+		"name": "a"
+	},
+	"flightNumber": {
+		"airlineCode": "a",
+		"trackNumber": "a",
+		"suffix": "a"
+	},
+	"departureAirport": "a",
+	"arrivalAirport": "a",
+	"originDate": "a",
+	"TypeBRawMessage": "a",
+	"AircraftMovement": {
+		"AircraftMovementStatus": {
+			"Cancelled": "a",
+			"Cleared": "a",
+			"Code": "a",
+			"DeicingStatus": "a",
+			"Deleted": "a",
+			"OperationalStatus": "a",
+			"PublicStatus": "a",
+			"Regulated": "a"
+		},
+		"AircraftMovementIdentification": {
+			"AirTrafficControlCallsign": "a",
+			"AircraftMovementCodeShare": {
+				"Number": "a",
+				"ShowToPublic": true
+			},
+			"DisplayedIdentifier": "a",
+			"IATAFlightNumber": "a",
+			"IATAOperatorIdentifier": "a",
+			"ICAOIdentifier": "a",
+			"ICAONumber": "a",
+			"Number": "a",
+			"ScheduledDateTime": "a",
+			"Suffix": "a",
+			"SystemIdentifier": "a",
+			"TurnRoundIdentifier": "a"
+		},
+		"ArrivalOrDeparture": "a",
+		"ArrivalSecurityCheck": true,
+		"AutomaticProcessing": "a",
+		"BaggageReclaim": "a",
+		"BillingInformation": {
+			"AircraftFEGPEquipped": true,
+			"AircraftPCAEquipped": true,
+			"RebatePassengerNumbers": 1,
+			"RebatePassengerReasonCode": "a"
+		},
+		"CarrierCode": "a",
+		"CheckinZone": "a",
+		"Comments": "a",
+		"ConnectionAircraftMovement": {
+			"CheckinZone": "a",
+			"ConnectingFlightDestination": "a",
+			"ConnectingFlightNumber": "a",
+			"EstimatedDateTime": "a",
+			"Gate": "a",
+			"OperatedDateTime": "a",
+			"Order": 1,
+			"ScheduledDateTime": "a",
+			"Terminal": "a",
+			"TransferBagCount": 1,
+			"TransferPassengerCount": 1
+		},
+		"DeicingMode": "a",
+		"DeicingPadLocation": "a",
+		"DeicingRigEquipment": "a",
+		"DeicingStandLocation": "a",
+		"DepartureSecurityCheck": true,
+		"Description": "a",
+		"Display": true,
+		"DisplayFromTime": "a",
+		"DisplayUntilTime": "a",
+		"DivertAirport": "a",
+		"DivertAirportFacilityCode": "a",
+		"DivertIndicator": "a",
+		"DivertReason": "a",
+		"DivertReasonCode": "a",
+		"EstimatedDateTime": "a",
+		"FlightClassification": "a",
+		"FlightNumber": "a",
+		"FlightOriginOrDestination": "a",
+		"FromStand": "a",
+		"Gate": "a",
+		"HandlingAgentParty": {
+			"CateringLoaderNumber": "a",
+			"Code": "a",
+			"HandlingCrewNumber": "a",
+			"Name": "a",
+			"PassengerHandlingTeamIdentifier": "a",
+			"Type": "a"
+		},
+		"IATAIrregularityDetails": {
+			"Duration": 1,
+			"NumericCode": "a"
+		},
+		"InboundOrigin": "a",
+		"LinkedAircraftMovement": {
+			"AircraftOnGround": true,
+			"ArrivalOrDeparture": "a",
+			"IATAFlightNumber": "a",
+			"IATAOperatorIdentifier": "a",
+			"ICAOIdentifier": "a",
+			"ICAONumber": 1,
+			"ScheduledDateTime": "a",
+			"Suffix": "a",
+			"SystemIdentifier": "a"
+		},
+		"OperatedDateTime": "a",
+		"OperationalTimes": {
+			"ActualCommenceofGroundHandlingTimeACGT": "a",
+			"ActualCommencementofDeicingTimeACZT": "a",
+			"ActualDeIcingDurationADIT": "a",
+			"ActualEndBoardingTimeAEBT": "a",
+			"ActualEndofDeicingTimeAEZT": "a",
+			"ActualEndofGroundHandlingTimeAEGT": "a",
+			"ActualFinalApproachTimeAFAT": "a",
+			"ActualGroundHandlingDurationAGHT": "a",
+			"ActualInBlockTimeAIBT": "a",
+			"ActualLandingTimeALDT": "a",
+			"ActualLastCallTime": "a",
+			"ActualOffBlockTimeAOBT": "a",
+			"ActualReadyforDeicingTimeARZT": "a",
+			"ActualReadyforDepartureTimeARDT": "a",
+			"ActualStartBoardingTimeASBT": "a",
+			"ActualStartUpApprovalTimeASAT": "a",
+			"ActualStartUpRequestTimeASRT": "a",
+			"ActualTakeOffTimeATOT": "a",
+			"ActualTaxiInDurationAXIT": "a",
+			"ActualTaxiOutDurationAXOT": "a",
+			"ActualTimeOfOperationLastPortOfCallLPocATO": "a",
+			"ActualTurnaroundTimeATTT": "a",
+			"AircraftMovementMeasure": {
+				"Code": "a",
+				"Description": "a",
+				"Identifier": "a",
+				"Name": "a",
+				"Title": "a",
+				"Value": "a"
+			},
+			"CalculatedTakeOffTimeCTOT": "a",
+			"EntryintoApproachZoneTime": "a",
+			"EstimatedCommencementofDeIcingTimeECZT": "a",
+			"EstimatedDeIcingDurationEDIT": "a",
+			"EstimatedEndBoardingTimeEEBT": "a",
+			"EstimatedEndofDeicingTimeEEZT": "a",
+			"EstimatedInBlockTimeEIBT": "a",
+			"EstimatedLandingTimeELDT": "a",
+			"EstimatedLastCallTime": "a",
+			"EstimatedOffBlockTimeEOBT": "a",
+			"EstimatedReadyforDeicingTimeERZT": "a",
+			"EstimatedStartBoardingTime": "a",
+			"EstimatedTakeOffTimeETOT": "a",
+			"EstimatedTaxiInDurationEXIT": "a",
+			"EstimatedTaxiOutDurationEXOT": "a",
+			"EstimatedTurnAroundDurationETTT": "a",
+			"MinimumTurnAroundTimeMTTT": "a",
+			"PlannedLastCallTime": "a",
+			"PlannedStartBoardingTime": "a",
+			"ScheduledInBlockTimeSIBT": "a",
+			"ScheduledOffBlockTimeSOBT": "a",
+			"ScheduledTurnAroundDurationSTTT": "a",
+			"TargetLandingTimeTLDT": "a",
+			"TargetOffBlockTimeTOBT": "a",
+			"TargetStartUpApprovalTimeTSAT": "a",
+			"TargetTakeOffTimeTTOT": "a"
+		},
+		"OutboundDestination": "a",
+		"Priority": "a",
+		"PriorityDisplay": true,
+		"RepeatNumber": "a",
+		"ScheduledDateTime": "a",
+		"SpecialNeedsIndicator": "a",
+		"TechnicalStop": true,
+		"Terminal": "a"
+	},
+	"AircraftTransport": {
+		"AircraftDescription": "a",
+		"EarliestDeliveryDateTime": "a",
+		"FutureMaximumTakeOffWeight": "a",
+		"GuidanceRequired": true,
+		"LatestDeliveryDateTime": "a",
+		"Mode": "a",
+		"NoiseCertificationIndicator": "a",
+		"StandChangeIndicator": "a",
+		"VehicleRequired": true,
+		"AircraftTransportType": {
+			"IATASubtypeCode": "a",
+			"IATATypeCode": "a",
+			"ICAOTypeCode": "a",
+			"WakeTurbulenceCategory": {
+				"Code": "a",
+				"Description": "a"
+			}
+		},
+		"AircraftTransportEquipment": {
+			"Description": "a",
+			"Identifier": "a",
+			"Mode": "a",
+			"AircraftTransportEquipmentCategory": {
+				"Description": "a",
+				"Identifier": "a"
+			},
+			"AircraftTransportEquipmentType": {
+				"Description": "a",
+				"Identifier": "a"
+			}
+		},
+		"AircraftTransportCabinConfiguration": {
+			"Cabin": "a",
+			"CabinClassType": "a",
+			"CabinType": "a",
+			"Compartment": "a",
+			"SeatCapacity": "a",
+			"SeatCount": "a",
+			"Status": "a"
+		},
+		"AircraftTransportIdentification": {
+			"AircraftAddress": "a",
+			"AircraftBodyType": "a",
+			"AircraftVersion": "a",
+			"CodeRequired": "a",
+			"FleetNumber": "a",
+			"GeneralTypeCode": "a",
+			"GroupCode": "a",
+			"OtherIdentifier": "a",
+			"Registration": "a"
+		},
+		"AircraftTransportLoad": {
+			"BallastWeight": "a",
+			"DeadLoad": "a",
+			"PassengerPartyCarried": {
+				"Passenger Types": [
+					{
+						"PassengerType": {
+							"PassengerType": "a",
+							"PassengerTypeCount": 1
+						}
+					}
+				],
+				"TotalPassengerCount": 1
+			},
+			"BagItemCarried": {
+				"Bag Types": [
+					{
+						"BagCode": "a",
+						"BagDescription": "a"
+					}
+				],
+				"BagTypeCount": 1,
+				"BagTypeWeight": 1,
+				"TotalCount": 1,
+				"TotalWeight": 1
+			},
+			"CargoItemCarried": {
+				"Cargo Types": [
+					{
+						"CargoCode": "a",
+						"CargoDescription": "a"
+					}
+				],
+				"CargoTypeCount": 1,
+				"CargoTypeWeight": 1,
+				"SpecialCargo": "a",
+				"TotalCount": 1,
+				"TotalWeight": 1
+			},
+			"MailItemCarried": {
+				"Mail Types": [
+					{
+						"MailCode": "a",
+						"MailDescription": "a"
+					}
+				],
+				"TotalWeight": 1
+			},
+			"CrewPartyCarried": {
+				"Crew Types": [
+					{
+						"CrewType": "a",
+						"CrewTypeCount": 1
+					}
+				],
+				"CrewCount": 1
+			}
+		},
+		"AircraftTransportIdentifier": {
+			"AircraftBodyType": "a",
+			"AircraftVersion": "a",
+			"CodeRequired": "a",
+			"FleetNumber": "a",
+			"GeneralTypeCode": "a",
+			"GroupCode": "a",
+			"IATASubtypeCode": "a",
+			"IATATypeCode": "a",
+			"ICAOTypeCode": "a",
+			"Registration": "a"
+		}
+	},
+	"AirportFacility": {
+		"IATAIdentifier": "a",
+		"RunwayFacility": {
+			"RunwayIdentifier": "a"
+		},
+		"StandFacility": {
+			"ArrivalStand": "a",
+			"CoachingIsRequired": true,
+			"ProvisionalStandNumber": "a",
+			"StandHoldConflictingStand": "a",
+			"StandHoldRequired": true,
+			"StandLocation": "a",
+			"StandNumber": "a",
+			"StandType": "a"
+		},
+		"TerminalFacility": {
+			"Code": "a",
+			"Description": "a",
+			"CheckinZoneFacility": {
+				"CheckinEndTime": "a",
+				"CheckinStartTime": "a",
+				"CheckinStatus": "a",
+				"CheckinZoneDescription": "a",
+				"CheckinZoneIdentifier": "a"
+			},
+			"BagItemDeliveryCarousel": {
+				"ActualFirstBagTime": "a",
+				"ActualLastBagTime": "a",
+				"BaggageReclaimStatus": "a",
+				"CarouselNumber": "a",
+				"ConveyorNumber": "a",
+				"LegacyFIDSCheckinZone": "a",
+				"SecondaryCarouselNumber": "a"
+			},
+			"GateFacility": {
+				"GateFacilityIdentification": {
+					"Identifier": "a"
+				},
+				"GeneralRemarks": "a",
+				"PreviousGate": "a",
+				"RemoteOperationGate": "a",
+				"SecondaryGateNumber": "a",
+				"StaffReadinessStatus": {
+					"StaffReadyForGateControl": true
+				},
+				"GateFacilityOperationalTimes": {
+					"ActualGateCloseTime": "a",
+					"ActualGateOpenTime": "a",
+					"GatingDueDateTime": "a",
+					"PlannedGateOpenTime": "a"
+				},
+				"PassengerBoardingStatus": {
+					"StatusAtGate": "a"
+				},
+				"PassengerGateInstruction": {
+					"GoToPassportControl": "a"
+				},
+				"PierFacility": {
+					"Description": "a",
+					"Identifier": "a"
+				},
+				"AirJetty": {
+					"AirJettyHireCode": "a",
+					"AirJettyType": "a"
+				}
+			}
+		}
+	},
+	"Route": {
+		"Description": "a",
+		"Identifier": "a",
+		"RequestedFlightLevel": "a",
+		"RequestedFlightLevelPoint": "a",
+		"RouteInternationalDomestic": "a",
+		"RouteSegment": {
+			"Description": "a",
+			"Identifier": "a",
+			"RequestedFlightLevel": "a",
+			"RequestedFlightLevelPoint": "a",
+			"TrueAirspeed": "a",
+			"TrueAirspeedPoint": "a"
+		},
+		"RouteText": "a",
+		"StandardInstrumentDeparture": "a",
+		"TrueAirspeed": "a",
+		"TrueAirspeedPoint": "a"
+	},
+	"ScheduledAircraftMovement": {
+		"AlternateAirport": "a",
+		"DepartureAirportICAOCode": "a",
+		"DestinationAirportICAOCode": "a",
+		"EstimatedDuration": "a",
+		"EstimatedTimeofArrival": "a",
+		"OtherInformation": "a",
+		"Remark": "a",
+		"ScheduledAircraftMovementIdentification": {
+			"AircraftMovementRuleType": {
+				"Code": "a",
+				"Description": "a"
+			},
+			"AircraftMovementType": {
+				"Code": "a",
+				"Description": "a"
+			},
+			"AirTrafficControlCallsign": "a",
+			"IATAFlightNumber": "a",
+			"IATAOperatorIdentifier": "a",
+			"ICAOIdentifier": "a",
+			"ICAONumber": "a",
+			"Identifier": "a",
+			"Number": "a",
+			"ScheduledDateTime": "a",
+			"Suffix": "a",
+			"SystemIdentifier": "a",
+			"TurnRoundIdentifier": "a"
+		},
+		"ScheduledAircraftMovementStatus": [
+			{
+				"Code": "a",
+				"Description": "a"
+			}
+		]
+	},
+	"DataQuality": {
+		"Completeness": "a",
+		"Validity": "a",
+		"UpdateTimestamp": "a",
+		"UpdatedBy": "a"
+	},
+	"DroneAircraftMovement": {
+		"AircraftMovementStatus": "a",
+		"ArrivalOrDeparture": "a",
+		"Comments": "a",
+		"Description": "a",
+		"DestinationLocation": [
+			{
+				"GeographicLocation": {
+					"Code": "a",
+					"Name": "a",
+					"SpatialReferenceDefinition": {
+						"CoordX": 1.1,
+						"CoordY": 1.1,
+						"CoordZ": 1.1,
+						"SpatialReferenceSystem": [
+							{
+								"Description": "a",
+								"Identifier": "a",
+								"SpatialReferenceSystemType": [
+									{
+										"Code": "a",
+										"Description": "a"
+									}
+								],
+								"SpatialStandardsAuthorityParty": [
+									{
+										"Description": "a",
+										"GeopoliticalLocationHierarchy": {
+											"Description": "a",
+											"GeopoliticalLocationCategory": {
+												"ChildNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												],
+												"Description": "a",
+												"Name": "a",
+												"ParentNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												]
+											},
+											"Name": "a"
+										},
+										"Name": "a"
+									}
+								]
+							}
+						],
+						"Value": "a"
+					}
+				},
+				"GeopoliticalLocation": {
+					"Description": "a",
+					"GeopoliticalLocationType": [
+						{
+							"Description": "a",
+							"Name": "a"
+						}
+					],
+					"Name": "a"
+				},
+				"Value": "a"
+			}
+		],
+		"DroneAircraftMovementIdentification": {
+			"DisplayedIdentifier": "a",
+			"Number": "a",
+			"ScheduledDateTime": "a"
+		},
+		"DroneAircraftMovementStatus": {
+			"Cancelled": "a",
+			"Cleared": "a",
+			"Code": "a",
+			"DeicingStatus": "a",
+			"Deleted": "a",
+			"OperationalStatus": "a",
+			"Public Status": "a",
+			"Regulated": "a"
+		},
+		"DroneOperatorParty": [
+			{
+				"DroneOperatorPartyIdentification": {
+					"Description": "a",
+					"Identifier": "a"
+				},
+				"Remark": "a"
+			}
+		],
+		"FlightOriginOrDestination": "a",
+		"Identifier": "a",
+		"OperatedDateTime": "a",
+		"OperationalTimes": {
+			"ActualCommenceofGroundHandlingTimeACGT": "a",
+			"ActualCommencementofDeicingTimeACZT": "a",
+			"ActualDeIcingDurationADIT": "a",
+			"ActualEndBoardingTimeAEBT": "a",
+			"ActualEndofDeicingTimeAEZT": "a",
+			"ActualEndofGroundHandlingTimeAEGT": "a",
+			"ActualFinalApproachTimeAFAT": "a",
+			"ActualGroundHandlingDurationAGHT": "a",
+			"ActualInBlockTimeAIBT": "a",
+			"ActualLandingTimeALDT": "a",
+			"ActualLastCallTime": "a",
+			"ActualOffBlockTimeAOBT": "a",
+			"ActualReadyforDeicingTimeARZT": "a",
+			"ActualReadyforDepartureTimeARDT": "a",
+			"ActualStartBoardingTimeASBT": "a",
+			"ActualStartUpApprovalTimeASAT": "a",
+			"ActualStartUpRequestTimeASRT": "a",
+			"ActualTakeOffTimeATOT": "a",
+			"ActualTaxiInDurationAXIT": "a",
+			"ActualTaxiOutDurationAXOT": "a",
+			"ActualTimeOfOperationLastPortOfCallLPocATO": "a",
+			"ActualTurnaroundTimeATTT": "a",
+			"AircraftMovementMeasure": {
+				"Code": "a",
+				"Description": "a",
+				"Identifier": "a",
+				"Name": "a",
+				"Title": "a",
+				"Value": "a"
+			},
+			"CalculatedTakeOffTimeCTOT": "a",
+			"EntryintoApproachZoneTime": "a",
+			"EstimatedCommencementofDeIcingTimeECZT": "a",
+			"EstimatedDeIcingDurationEDIT": "a",
+			"EstimatedEndBoardingTimeEEBT": "a",
+			"EstimatedEndofDeicingTimeEEZT": "a",
+			"EstimatedInBlockTimeEIBT": "a",
+			"EstimatedLandingTimeELDT": "a",
+			"EstimatedLastCallTime": "a",
+			"EstimatedOffBlockTimeEOBT": "a",
+			"EstimatedReadyforDeicingTimeERZT": "a",
+			"EstimatedStartBoardingTime": "a",
+			"EstimatedTakeOffTimeETOT": "a",
+			"EstimatedTaxiInDurationEXIT": "a",
+			"EstimatedTaxiOutDurationEXOT": "a",
+			"EstimatedTurnAroundDurationETTT": "a",
+			"MinimumTurnAroundTimeMTTT": "a",
+			"PlannedLastCallTime": "a",
+			"PlannedStartBoardingTime": "a",
+			"ScheduledInBlockTimeSIBT": "a",
+			"ScheduledOffBlockTimeSOBT": "a",
+			"ScheduledTurnAroundDurationSTTT": "a",
+			"TargetLandingTimeTLDT": "a",
+			"TargetOffBlockTimeTOBT": "a",
+			"TargetStartUpApprovalTimeTSAT": "a",
+			"TargetTakeOffTimeTTOT": "a"
+		},
+		"OriginLocation": [
+			{
+				"GeographicLocation": {
+					"Code": "a",
+					"Name": "a",
+					"SpatialReferenceDefinition": {
+						"CoordX": 1.1,
+						"CoordY": 1.1,
+						"CoordZ": 1.1,
+						"SpatialReferenceSystem": [
+							{
+								"Description": "a",
+								"Identifier": "a",
+								"SpatialReferenceSystemType": [
+									{
+										"Code": "a",
+										"Description": "a"
+									}
+								],
+								"SpatialStandardsAuthorityParty": [
+									{
+										"Description": "a",
+										"GeopoliticalLocationHierarchy": {
+											"Description": "a",
+											"GeopoliticalLocationCategory": {
+												"ChildNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												],
+												"Description": "a",
+												"Name": "a",
+												"ParentNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												]
+											},
+											"Name": "a"
+										},
+										"Name": "a"
+									}
+								]
+							}
+						],
+						"Value": "a"
+					}
+				},
+				"GeopoliticalLocation": {
+					"Description": "a",
+					"GeopoliticalLocationType": [
+						{
+							"Description": "a",
+							"Name": "a"
+						}
+					],
+					"Name": "a"
+				},
+				"Value": "a"
+			}
+		],
+		"Priority": "a",
+		"Route": [
+			{
+				"Description": "a",
+				"Identifier": "a",
+				"RequestedFlightLevel": "a",
+				"RequestedFlightLevelPoint": "a",
+				"RouteInternationalDomestic": "a",
+				"RouteSegment": {
+					"Description": "a",
+					"Identifier": "a",
+					"RequestedFlightLevel": "a",
+					"RequestedFlightLevelPoint": "a",
+					"TrueAirspeed": "a",
+					"TrueAirspeedPoint": "a"
+				},
+				"RouteText": "a",
+				"StandardInstrumentDeparture": "a",
+				"TrueAirspeed": "a",
+				"TrueAirspeedPoint": "a"
+			}
+		],
+		"ScheduledDateTime": "a"
+	},
+	"ScheduledDroneAircraftMovement": {
+		"Activity": [
+			{
+				"ActivityType": [
+					{
+						"Description": "a",
+						"Value": "a"
+					}
+				],
+				"Description": "a",
+				"Value": "a"
+			}
+		],
+		"ContactResolutionScope": "a",
+		"Description": "a",
+		"DroneAircraftMovementRuleType": [
+			{
+				"Code": "a",
+				"Description": "a"
+			}
+		],
+		"DroneAircraftMovementType": [
+			{
+				"Code": "a",
+				"Description": "a"
+			}
+		],
+		"DroneAircraftTransport": [
+			{
+				"AircraftDescription": "a",
+				"AircraftTransportEquipment": [
+					{
+						"Description": "a",
+						"Identifier": "a",
+						"Mode": "a",
+						"AircraftTransportEquipmentCategory": {
+							"Description": "a",
+							"Identifier": "a"
+						},
+						"AircraftTransportEquipmentType": {
+							"Description": "a",
+							"Identifier": "a"
+						}
+					}
+				],
+				"DroneAircraftTransportIdentification": {
+					"AircraftBodyType": "a",
+					"AircraftVersion": "a",
+					"CodeRequired": "a",
+					"GeneralTypeCode": "a",
+					"GroupCode": "a",
+					"OtherIdentifier": "a",
+					"Registration": "a"
+				},
+				"DroneAircraftTransportType": [
+					"a"
+				],
+				"FutureMaximumTakeOffWeight": 1,
+				"GuidanceRequired": true,
+				"Mode": "a"
+			}
+		],
+		"EstimatedDuration": "a",
+		"EstimatedTimeOfArrival": "a",
+		"OperationalTimes": [
+			{
+				"ActualCommenceofGroundHandlingTimeACGT": "a",
+				"ActualCommencementofDeicingTimeACZT": "a",
+				"ActualDeIcingDurationADIT": "a",
+				"ActualEndBoardingTimeAEBT": "a",
+				"ActualEndofDeicingTimeAEZT": "a",
+				"ActualEndofGroundHandlingTimeAEGT": "a",
+				"ActualFinalApproachTimeAFAT": "a",
+				"ActualGroundHandlingDurationAGHT": "a",
+				"ActualInBlockTimeAIBT": "a",
+				"ActualLandingTimeALDT": "a",
+				"ActualLastCallTime": "a",
+				"ActualOffBlockTimeAOBT": "a",
+				"ActualReadyforDeicingTimeARZT": "a",
+				"ActualReadyforDepartureTimeARDT": "a",
+				"ActualStartBoardingTimeASBT": "a",
+				"ActualStartUpApprovalTimeASAT": "a",
+				"ActualStartUpRequestTimeASRT": "a",
+				"ActualTakeOffTimeATOT": "a",
+				"ActualTaxiInDurationAXIT": "a",
+				"ActualTaxiOutDurationAXOT": "a",
+				"ActualTimeOfOperationLastPortOfCallLPocATO": "a",
+				"ActualTurnaroundTimeATTT": "a",
+				"AircraftMovementMeasure": {
+					"Code": "a",
+					"Description": "a",
+					"Identifier": "a",
+					"Name": "a",
+					"Title": "a",
+					"Value": "a"
+				},
+				"CalculatedTakeOffTimeCTOT": "a",
+				"EntryintoApproachZoneTime": "a",
+				"EstimatedCommencementofDeIcingTimeECZT": "a",
+				"EstimatedDeIcingDurationEDIT": "a",
+				"EstimatedEndBoardingTimeEEBT": "a",
+				"EstimatedEndofDeicingTimeEEZT": "a",
+				"EstimatedInBlockTimeEIBT": "a",
+				"EstimatedLandingTimeELDT": "a",
+				"EstimatedLastCallTime": "a",
+				"EstimatedOffBlockTimeEOBT": "a",
+				"EstimatedReadyforDeicingTimeERZT": "a",
+				"EstimatedStartBoardingTime": "a",
+				"EstimatedTakeOffTimeETOT": "a",
+				"EstimatedTaxiInDurationEXIT": "a",
+				"EstimatedTaxiOutDurationEXOT": "a",
+				"EstimatedTurnAroundDurationETTT": "a",
+				"MinimumTurnAroundTimeMTTT": "a",
+				"PlannedLastCallTime": "a",
+				"PlannedStartBoardingTime": "a",
+				"ScheduledInBlockTimeSIBT": "a",
+				"ScheduledOffBlockTimeSOBT": "a",
+				"ScheduledTurnAroundDurationSTTT": "a",
+				"TargetLandingTimeTLDT": "a",
+				"TargetOffBlockTimeTOBT": "a",
+				"TargetStartUpApprovalTimeTSAT": "a",
+				"TargetTakeOffTimeTTOT": "a"
+			}
+		],
+		"OtherInformation": "a",
+		"PlannedDestinationLocation": [
+			{
+				"GeographicLocation": {
+					"Code": "a",
+					"Name": "a",
+					"SpatialReferenceDefinition": {
+						"CoordX": 1.1,
+						"CoordY": 1.1,
+						"CoordZ": 1.1,
+						"SpatialReferenceSystem": [
+							{
+								"Description": "a",
+								"Identifier": "a",
+								"SpatialReferenceSystemType": [
+									{
+										"Code": "a",
+										"Description": "a"
+									}
+								],
+								"SpatialStandardsAuthorityParty": [
+									{
+										"Description": "a",
+										"GeopoliticalLocationHierarchy": {
+											"Description": "a",
+											"GeopoliticalLocationCategory": {
+												"ChildNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												],
+												"Description": "a",
+												"Name": "a",
+												"ParentNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												]
+											},
+											"Name": "a"
+										},
+										"Name": "a"
+									}
+								]
+							}
+						],
+						"Value": "a"
+					}
+				},
+				"GeopoliticalLocation": {
+					"Description": "a",
+					"GeopoliticalLocationType": [
+						{
+							"Description": "a",
+							"Name": "a"
+						}
+					],
+					"Name": "a"
+				},
+				"Value": "a"
+			}
+		],
+		"PlannedOriginLocation": [
+			{
+				"GeographicLocation": {
+					"Code": "a",
+					"Name": "a",
+					"SpatialReferenceDefinition": {
+						"CoordX": 1.1,
+						"CoordY": 1.1,
+						"CoordZ": 1.1,
+						"SpatialReferenceSystem": [
+							{
+								"Description": "a",
+								"Identifier": "a",
+								"SpatialReferenceSystemType": [
+									{
+										"Code": "a",
+										"Description": "a"
+									}
+								],
+								"SpatialStandardsAuthorityParty": [
+									{
+										"Description": "a",
+										"GeopoliticalLocationHierarchy": {
+											"Description": "a",
+											"GeopoliticalLocationCategory": {
+												"ChildNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												],
+												"Description": "a",
+												"Name": "a",
+												"ParentNamedLocation": [
+													{
+														"Description": "a",
+														"GeopoliticalLocationType": [
+															{
+																"Description": "a",
+																"Name": "a"
+															}
+														],
+														"Name": "a"
+													}
+												]
+											},
+											"Name": "a"
+										},
+										"Name": "a"
+									}
+								]
+							}
+						],
+						"Value": "a"
+					}
+				},
+				"GeopoliticalLocation": {
+					"Description": "a",
+					"GeopoliticalLocationType": [
+						{
+							"Description": "a",
+							"Name": "a"
+						}
+					],
+					"Name": "a"
+				},
+				"Value": "a"
+			}
+		],
+		"Purpose": "a",
+		"Remark": "a",
+		"Route": [
+			{
+				"Description": "a",
+				"Identifier": "a",
+				"RequestedFlightLevel": "a",
+				"RequestedFlightLevelPoint": "a",
+				"RouteInternationalDomestic": "a",
+				"RouteSegment": {
+					"Description": "a",
+					"Identifier": "a",
+					"RequestedFlightLevel": "a",
+					"RequestedFlightLevelPoint": "a",
+					"TrueAirspeed": "a",
+					"TrueAirspeedPoint": "a"
+				},
+				"RouteText": "a",
+				"StandardInstrumentDeparture": "a",
+				"TrueAirspeed": "a",
+				"TrueAirspeedPoint": "a"
+			}
+		],
+		"SORAReference": "a",
+		"ScheduledAircraftMovementStatus": [
+			{
+				"Code": "a",
+				"Description": "a"
+			}
+		],
+		"ScheduledDroneAircraftMovementIdentification": [
+			{
+				"Identifier": "a",
+				"ScheduledDateTime": "a",
+				"SystemIdentifier": "a"
+			}
+		],
+		"Summary": "a"
+	}
+}

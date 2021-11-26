@@ -1,0 +1,48 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-page form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.login-page-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes spinner {
+    from {transform:rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner:before {
+    content: '';
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2vw;
+    height: 2vw;    
+    margin-top: -1vw;
+    margin-left: -1vw;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #000;
+    animation: spinner .6s linear infinite;
+  }
+
+.login-page-hidden {
+    visibility: hidden;
+}

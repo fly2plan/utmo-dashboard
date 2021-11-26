@@ -1,0 +1,7 @@
+.flight-plan-number-field {
+    margin-bottom: 30px;
+}
+
+.flight-plan-div:last-child > .flight-plan-number-field {
+    margin-bottom: 0px;
+}

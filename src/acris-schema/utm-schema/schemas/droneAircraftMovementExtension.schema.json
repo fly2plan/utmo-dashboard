@@ -71,7 +71,7 @@
 					"description": "Information that informs the Airline and Airport operational staff concerning the status of an Aircraft Movement Segment.",
 					"type": "string"
 				},
-				"Public Status": {
+				"PublicStatus": {
 					"description": "Information about the Aircraft Movement Segment Status list that can be displayed to the public.",
 					"type": "string"
 				},
@@ -82,8 +82,6 @@
 			}
 		},
 		"DroneOperatorParty": {
-			"type": "array",
-			"items": {
 				"type": "object",
 				"description": "Information about the operator operating the flight",
 				"properties": {
@@ -105,7 +103,6 @@
 						"type": "string"
 					}
 				}
-			}
 		},
 		"FlightOriginOrDestination": {
 			"description": "The origin/destination for the aircraft movement",
@@ -124,20 +121,14 @@
 			"$ref": "operationalTimesExtension.schema.json"
 		},
 		"OriginLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "locationExtension.schema.json"
-			}
+			"$ref": "locationExtension.schema.json"
 		},
 		"Priority": {
 			"description": "Information on the Flight Service Priority on allocated Slot",
 			"type": "string"
 		},
 		"Route": {
-			"type": "array",
-			"items": {
-				"$ref": "routeExtension.schema.json"
-			}
+			"$ref": "routeExtension.schema.json"
 		},
 		"ScheduledDateTime": {
 			"description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",

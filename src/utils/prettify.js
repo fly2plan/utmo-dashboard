@@ -10,6 +10,8 @@ const prettify = (key) => {
     key = key.replace("SORA", "");
     prepend = "SORA"
   }
+  // Remove 4 letter aviation acronyms
+  key = key.replace(/([A-Z]{4}$)/, "");
   // distinguish separate words by capital letters
   let splitKey = key.trim().match(/([A-Z]?[^A-Z]*)/g).slice(0, -1)
   splitKey[0] = splitKey[0].charAt(0).toUpperCase() + splitKey[0].slice(1);

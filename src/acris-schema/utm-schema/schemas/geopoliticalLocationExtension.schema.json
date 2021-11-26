@@ -8,10 +8,7 @@
 			"type": "string"
 		},
 		"GeopoliticalLocationType": {
-			"type": "array",
-			"items": {
-				"$ref": "geopoliticalLocationTypeExtension.schema.json"
-			}
+			"$ref": "geopoliticalLocationTypeExtension.schema.json"
 		},
 		"Name": {
 			"description": "Name of the geopolitical named location reference system used in the specification of a Location.",

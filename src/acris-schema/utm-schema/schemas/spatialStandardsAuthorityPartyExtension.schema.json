@@ -8,7 +8,32 @@
 			"type": "string"
 		},
 		"GeopoliticalLocationHierarchy": {
-			"$ref": "geopoliticalLocationHierarchyExtension.schema.json"
+			"type": "object",
+			"properties": {
+				"Description": {
+					"type": "string"
+				},
+				"GeopoliticalLocationCategory": {
+					"type": "object",
+					"properties": {
+						"ChildNamedLocation": {
+							"$ref": "geopoliticalLocationExtension.schema.json"
+						},
+						"Description": {
+							"type": "string"
+						},
+						"Name": {
+							"type": "string"
+						},
+						"ParentNamedLocation": {
+							"$ref": "geopoliticalLocationExtension.schema.json"
+						}
+					}
+				},
+				"Name": {
+					"type": "string"
+				}
+			}
 		},
 		"Name": {
 			"description": "Name of the standards authority for the geospatial reference system used in the specification of a Location.",

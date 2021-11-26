@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "PaxCount",
+  "description": "Individual Passenger count statistic",
+  "type": "object",
+  "properties": {
+    "elementType" : {
+      "type": "string",
+      "enum": ["pax", "bag"],
+      "description": "the element type being counted (pax or bag - if missing assume pax)",
+      "required": false
+    },
+    "category": {
+      "type": "string",
+      "enum": ["total", "transfer", "assistance"],
+      "description": "The count category: (if missing or blank assume total count)",
+      "required": false
+    },
+    "assistanceQualifier": {
+      "type": "string",
+      "description": "optional qualifier for assistance (Wheelchair, Unnaccompanied minor, etc)",
+      "required": false
+    },
+    "transferQualifier": {
+      "$ref": "flightNumber.schema.json"
+    },
+    "count": {
+      "type": "integer",
+      "description": "the passenger count",
+      "required": true
+    }
+  }
+}

@@ -12,7 +12,25 @@
 			"type": "string"
 		},
 		"SpatialReferenceDefinition": {
-			"$ref": "spatialReferenceDefinitionExtension.schema.json"
+			"type": "object",
+			"properties": {
+				"CoordX": {
+					"type": "number"
+				},
+				"CoordY": {
+					"type": "number"
+				},
+				"CoordZ": {
+					"type": "number"
+				},
+				"SpatialReferenceSystem": {
+					"$ref": "spatialReferenceSystemExtension.schema.json"
+				},
+				"Value": {
+					"description": "Address string of the Location identified by the Named Location Reference System.",
+					"type": "string"
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "PaxCountExtension",
+  "type": "object",
+  "description": "passenger count extension",
+  "properties": {
+    "paxCounts": {
+      "type": "array",
+      "required": false,
+      "description": "list of passenger count statistics",
+      "items": {
+        "$ref": "paxCount.schema.json"
+      }
+    }
+  }
+}

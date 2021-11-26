@@ -1,0 +1,50 @@
+{
+    "DroneAircraftMovement": {
+        "OperationalTimes": {
+            "ActualLandingTimeALDT": "2021-11-17T11:44:00Z",
+            "ActualTakeOffTimeATOT": "2021-11-17T11:25:00Z",
+            "CalculatedTakeOffTimeCTOT": "2021-11-17T11:25:00Z",
+            "ScheduledInBlockTimeSIBT": "2021-11-17T11:44:00Z",
+            "ScheduledOffBlockTimeSOBT": "2021-11-17T11:25:00Z",
+            "TargetOffBlockTimeTOBT": "2021-11-17T11:25:00Z"
+        }
+    },
+    "ScheduledDroneAircraftMovement": {
+        "Activity": {
+            "ActivityType": {
+                "Value": "Commercial"
+            },
+            "Value": "T4 Ground Facilities Inspection, LHR"
+        },
+        "DroneAircraftTransport": {
+            "AircraftTransportEquipment": {
+                "Description": "Serial",
+                "Identifier": "123ABC"
+            },
+            "DroneAircraftTransportIdentification": {
+                "AircraftBodyType": "Rotary",
+                "Registration": "AAA111"
+            },
+            "FutureMaximumTakeOffWeight": "250"
+        },
+        "OperationalTimes": {
+            "TargetTakeOffTimeTTOT": "2021-11-17T11:25:00Z",
+            "TargetLandingTimeTLDT": "2021-11-17T11:44:00Z"
+        },
+        "PlannedDestinationLocation": {
+            "Value": "-0.450111,51.458677"
+        },
+        "PlannedOriginLocation": {
+            "Value": "-0.446072,51.461470"
+        },
+        "ScheduledAircraftMovementStatus": {
+            "Code": "1",
+            "Description": "Pending"
+        },
+        "ScheduledDroneAircraftMovementIdentification": {
+            "Identifier": "testFlight28"
+        },
+        "Summary": "Aerial Inspection Flight"
+    },
+    "originDate": "2021-11-17"
+}

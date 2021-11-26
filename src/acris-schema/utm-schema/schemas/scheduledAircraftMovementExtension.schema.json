@@ -87,10 +87,7 @@
 			}
 		},
 		"ScheduledAircraftMovementStatus": {
-			"type": "array",
-			"items": {
-				"$ref": "scheduledAircraftMovementStatusExtension.schema.json"
-			}
+			"$ref": "scheduledAircraftMovementStatusExtension.schema.json"
 		}
 	}
 }

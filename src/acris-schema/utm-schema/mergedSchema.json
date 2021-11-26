@@ -119,34 +119,7 @@
                     }
                 },
                 "ScheduledAircraftMovementStatus": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/ScheduledAircraftMovementStatus"
-                    }
-                }
-            }
-        },
-        "GeopoliticalLocationCategory": {
-            "title": "GeopoliticalLocationCategory",
-            "type": "object",
-            "properties": {
-                "ChildNamedLocation": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/GeopoliticalLocation"
-                    }
-                },
-                "Description": {
-                    "type": "string"
-                },
-                "Name": {
-                    "type": "string"
-                },
-                "ParentNamedLocation": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/GeopoliticalLocation"
-                    }
+                    "$ref": "#/definitions/ScheduledAircraftMovementStatus"
                 }
             }
         },
@@ -393,10 +366,7 @@
                     "type": "string"
                 },
                 "GeopoliticalLocationType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/GeopoliticalLocationType"
-                    }
+                    "$ref": "#/definitions/GeopoliticalLocationType"
                 },
                 "Name": {
                     "description": "Name of the geopolitical named location reference system used in the specification of a Location.",
@@ -478,7 +448,6 @@
         "DroneAircraftTransportType": {
             "title": "DroneAircraftTransportType",
             "description": "The airframe/performance characteristics of the drone.\n\nValue, Name, Description:\nfixedWing\tFixed Wing\tA craft with a rigid wing/airfoil - it generates lift through its forward airspeed.\nrotary\tRotary\tA craft with one or more rotorblades - it generates lift through the rotation of the blades.",
-            "type": "object",
             "properties": {
                 "Description": {
                     "description": "Description of the drone aircraft transport",
@@ -490,21 +459,6 @@
                 },
                 "Value": {
                     "description": "Value of the drone aircraft transport",
-                    "type": "string"
-                }
-            }
-        },
-        "GeopoliticalLocationHierarchy": {
-            "title": "GeopoliticalLocationHierarchy",
-            "type": "object",
-            "properties": {
-                "Description": {
-                    "type": "string"
-                },
-                "GeopoliticalLocationCategory": {
-                    "$ref": "#/definitions/GeopoliticalLocationCategory"
-                },
-                "Name": {
                     "type": "string"
                 }
             }
@@ -971,31 +925,6 @@
                 }
             }
         },
-        "SpatialReferenceDefinition": {
-            "title": "SpatialReferenceDefinition",
-            "type": "object",
-            "properties": {
-                "CoordX": {
-                    "type": "number"
-                },
-                "CoordY": {
-                    "type": "number"
-                },
-                "CoordZ": {
-                    "type": "number"
-                },
-                "SpatialReferenceSystem": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/SpatialReferenceSystem"
-                    }
-                },
-                "Value": {
-                    "description": "Address string of the Location identified by the Named Location Reference System.",
-                    "type": "string"
-                }
-            }
-        },
         "WakeTurbulenceCategory": {
             "title": "WakeTurbulenceCategory",
             "description": "Wake turbulence category\nThe message shall indicate the wake turbulence category of that aircraft type. The IFPS shall accept only the following 4 wake turbulence categories:\nL (light), M (medium), H (heavy) or J (super).\nL Shall be inserted for an aircraft with a maximum certified take off mass of 7000 kg or less.\nM Shall be inserted for an aircraft with a maximum certified take off mass of less than 136000 kg but more than 7000 kg.\nH Shall be inserted for an aircraft with a maximum certified take off mass of less than 560000kg but more than 136000 kg.\nJ Shall be inserted for an aircraft with a maximum certified take off mass of 560000kg or more.",
@@ -1016,10 +945,7 @@
             "type": "object",
             "properties": {
                 "ActivityType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/ActivityType"
-                    }
+                    "$ref": "#/definitions/ActivityType"
                 },
                 "Description": {
                     "type": "string"
@@ -1039,10 +965,7 @@
                     "type": "string"
                 },
                 "AircraftTransportEquipment": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/AircraftTransportEquipment"
-                    }
+                    "$ref": "#/definitions/AircraftTransportEquipment"
                 },
                 "DroneAircraftTransportIdentification": {
                     "type": "object",
@@ -1079,10 +1002,7 @@
                     }
                 },
                 "DroneAircraftTransportType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/DroneAircraftTransportType"
-                    }
+                    "$ref": "#/definitions/DroneAircraftTransportType"
                 },
                 "FutureMaximumTakeOffWeight": {
                     "description": "Future max takeoff weight",
@@ -1133,10 +1053,7 @@
             "type": "object",
             "properties": {
                 "Activity": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Activity"
-                    }
+                    "$ref": "#/definitions/Activity"
                 },
                 "ContactResolutionScope": {
                     "description": "The scope under which the flight plan will be tested for conflictions against (global or local).",
@@ -1147,22 +1064,13 @@
                     "type": "string"
                 },
                 "DroneAircraftMovementRuleType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/DroneAircraftMovementRuleType"
-                    }
+                    "$ref": "#/definitions/DroneAircraftMovementRuleType"
                 },
                 "DroneAircraftMovementType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/DroneAircraftMovementType"
-                    }
+                    "$ref": "#/definitions/DroneAircraftMovementType"
                 },
                 "DroneAircraftTransport": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/DroneAircraftTransport"
-                    }
+                    "$ref": "#/definitions/DroneAircraftTransport"
                 },
                 "EstimatedDuration": {
                     "description": "Total estimated elapsed time in hours and minutes. For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [DOC 4444]",
@@ -1173,10 +1081,7 @@
                     "type": "string"
                 },
                 "OperationalTimes": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/OperationalTimes"
-                    }
+                    "$ref": "#/definitions/OperationalTimes"
                 },
                 "OtherInformation": {
                     "description": "Other necessary information for the scheduled aircraft movement. [DOC 4444]",
@@ -1189,10 +1094,7 @@
                     }
                 },
                 "PlannedOriginLocation": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Location"
-                    }
+                    "$ref": "#/definitions/Location"
                 },
                 "Purpose": {
                     "description": "A public description of the purpose of the flight, e.g. Inspection.",
@@ -1203,26 +1105,17 @@
                     "type": "string"
                 },
                 "Route": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Route"
-                    }
+                    "$ref": "#/definitions/Route"
                 },
                 "SORAReference": {
                     "description": "SORA Specific Operational Risk Assessment",
                     "type": "string"
                 },
                 "ScheduledAircraftMovementStatus": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/ScheduledAircraftMovementStatus"
-                    }
+                    "$ref": "#/definitions/ScheduledAircraftMovementStatus"
                 },
                 "ScheduledDroneAircraftMovementIdentification": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/ScheduledDroneAircraftMovementIdentification"
-                    }
+                    "$ref": "#/definitions/ScheduledDroneAircraftMovementIdentification"
                 },
                 "Summary": {
                     "description": "Summary of the flight or operation. This may be shared with others if the scope is global.",
@@ -1827,7 +1720,25 @@
                     "type": "string"
                 },
                 "SpatialReferenceDefinition": {
-                    "$ref": "#/definitions/SpatialReferenceDefinition"
+                    "type": "object",
+                    "properties": {
+                        "CoordX": {
+                            "type": "number"
+                        },
+                        "CoordY": {
+                            "type": "number"
+                        },
+                        "CoordZ": {
+                            "type": "number"
+                        },
+                        "SpatialReferenceSystem": {
+                            "$ref": "#/definitions/SpatialReferenceSystem"
+                        },
+                        "Value": {
+                            "description": "Address string of the Location identified by the Named Location Reference System.",
+                            "type": "string"
+                        }
+                    }
                 }
             }
         },
@@ -1923,7 +1834,7 @@
                             "description": "Information that informs the Airline and Airport operational staff concerning the status of an Aircraft Movement Segment.",
                             "type": "string"
                         },
-                        "Public Status": {
+                        "PublicStatus": {
                             "description": "Information about the Aircraft Movement Segment Status list that can be displayed to the public.",
                             "type": "string"
                         },
@@ -1934,28 +1845,25 @@
                     }
                 },
                 "DroneOperatorParty": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "description": "Information about the operator operating the flight",
-                        "properties": {
-                            "DroneOperatorPartyIdentification": {
-                                "type": "object",
-                                "description": "Information about the identifiers for the party operating the flight",
-                                "properties": {
-                                    "Description": {
-                                        "description": "Information that describes a drone operator party.",
-                                        "type": "string"
-                                    },
-                                    "Identifier": {
-                                        "description": "Information that identifies a drone operator party.",
-                                        "type": "string"
-                                    }
+                    "type": "object",
+                    "description": "Information about the operator operating the flight",
+                    "properties": {
+                        "DroneOperatorPartyIdentification": {
+                            "type": "object",
+                            "description": "Information about the identifiers for the party operating the flight",
+                            "properties": {
+                                "Description": {
+                                    "description": "Information that describes a drone operator party.",
+                                    "type": "string"
+                                },
+                                "Identifier": {
+                                    "description": "Information that identifies a drone operator party.",
+                                    "type": "string"
                                 }
-                            },
-                            "Remark": {
-                                "type": "string"
                             }
+                        },
+                        "Remark": {
+                            "type": "string"
                         }
                     }
                 },
@@ -1976,20 +1884,14 @@
                     "$ref": "#/definitions/OperationalTimes"
                 },
                 "OriginLocation": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Location"
-                    }
+                    "$ref": "#/definitions/Location"
                 },
                 "Priority": {
                     "description": "Information on the Flight Service Priority on allocated Slot",
                     "type": "string"
                 },
                 "Route": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Route"
-                    }
+                    "$ref": "#/definitions/Route"
                 },
                 "ScheduledDateTime": {
                     "description": "Information about the scheduled time of Arrival or Departure Aircraft Movement",
@@ -2188,16 +2090,10 @@
                     "type": "string"
                 },
                 "SpatialReferenceSystemType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/SpatialReferenceSystemType"
-                    }
+                    "$ref": "#/definitions/SpatialReferenceSystemType"
                 },
                 "SpatialStandardsAuthorityParty": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/SpatialStandardsAuthorityParty"
-                    }
+                    "$ref": "#/definitions/SpatialStandardsAuthorityParty"
                 }
             }
         },
@@ -2224,7 +2120,32 @@
                     "type": "string"
                 },
                 "GeopoliticalLocationHierarchy": {
-                    "$ref": "#/definitions/GeopoliticalLocationHierarchy"
+                    "type": "object",
+                    "properties": {
+                        "Description": {
+                            "type": "string"
+                        },
+                        "GeopoliticalLocationCategory": {
+                            "type": "object",
+                            "properties": {
+                                "ChildNamedLocation": {
+                                    "$ref": "#/definitions/GeopoliticalLocation"
+                                },
+                                "Description": {
+                                    "type": "string"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                },
+                                "ParentNamedLocation": {
+                                    "$ref": "#/definitions/GeopoliticalLocation"
+                                }
+                            }
+                        },
+                        "Name": {
+                            "type": "string"
+                        }
+                    }
                 },
                 "Name": {
                     "description": "Name of the standards authority for the geospatial reference system used in the specification of a Location.",

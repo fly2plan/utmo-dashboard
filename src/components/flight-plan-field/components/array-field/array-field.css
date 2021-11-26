@@ -1,0 +1,23 @@
+.array-field-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.array-field-overlay-button {
+    padding: .375rem .375rem .375rem .375rem;
+    height: 100%;
+    text-align: center;
+}
+
+.flight-plan-array-field > div > div > .flight-plan-group {
+    margin-bottom: 0px;
+}
+
+.flight-plan-array-field {
+    margin-bottom: 30px;
+}
+
+.flight-plan-div:last-child > .flight-plan-array-field {
+    margin-bottom: 0px;
+}

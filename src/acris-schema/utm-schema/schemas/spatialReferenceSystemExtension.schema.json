@@ -12,16 +12,10 @@
 			"type": "string"
 		},
 		"SpatialReferenceSystemType": {
-			"type": "array",
-			"items": {
-				"$ref": "spatialReferenceSystemTypeExtension.schema.json"
-			}
+			"$ref": "spatialReferenceSystemTypeExtension.schema.json"
 		},
 		"SpatialStandardsAuthorityParty": {
-			"type": "array",
-			"items": {
-				"$ref": "spatialStandardsAuthorityPartyExtension.schema.json"
-			}
+			"$ref": "spatialStandardsAuthorityPartyExtension.schema.json"
 		}
 	}
 }

@@ -5,10 +5,7 @@
 	"type": "object",
 	"properties": {
 		"Activity": {
-			"type": "array",
-			"items": {
-				"$ref": "activityExtension.schema.json"
-			}
+			"$ref": "activityExtension.schema.json"
 		},
 		"ContactResolutionScope": {
 			"description": "The scope under which the flight plan will be tested for conflictions against (global or local).",
@@ -19,22 +16,13 @@
 			"type": "string"
 		},
 		"DroneAircraftMovementRuleType": {
-			"type": "array",
-			"items": {
-				"$ref": "droneAircraftMovementRuleTypeExtension.schema.json"
-			}
+			"$ref": "droneAircraftMovementRuleTypeExtension.schema.json"
 		},
 		"DroneAircraftMovementType": {
-			"type": "array",
-			"items": {
-				"$ref": "droneAircraftMovementTypeExtension.schema.json"
-			}
+			"$ref": "droneAircraftMovementTypeExtension.schema.json"
 		},
 		"DroneAircraftTransport": {
-			"type": "array",
-			"items": {
-				"$ref": "droneAircraftTransportExtension.schema.json"
-			}
+			"$ref": "droneAircraftTransportExtension.schema.json"
 		},
 		"EstimatedDuration": {
 			"description": "Total estimated elapsed time in hours and minutes. For a flight plan received from an aircraft in flight, the total estimated elapsed time is the estimated time from the first point of the route to which the flight plan applies to the termination point of the flight plan. [DOC 4444]",
@@ -45,26 +33,20 @@
 			"type": "string"
 		},
 		"OperationalTimes": {
-			"type": "array",
-			"items": {
-				"$ref": "operationalTimesExtension.schema.json"
-			}
+			"$ref": "operationalTimesExtension.schema.json"
 		},
 		"OtherInformation": {
 			"description": "Other necessary information for the scheduled aircraft movement. [DOC 4444]",
 			"type": "string"
 		},
 		"PlannedDestinationLocation": {
-			"type": "array",
-			"items": {
+			"type": "array",			
+			 "items": {
 				"$ref": "locationExtension.schema.json"
 			}
 		},
 		"PlannedOriginLocation": {
-			"type": "array",
-			"items": {
-				"$ref": "locationExtension.schema.json"
-			}
+			"$ref": "locationExtension.schema.json"
 		},
 		"Purpose": {
 			"description": "A public description of the purpose of the flight, e.g. Inspection.",
@@ -75,26 +57,17 @@
 			"type": "string"
 		},
 		"Route": {
-			"type": "array",
-			"items": {
-				"$ref": "routeExtension.schema.json"
-			}
+			"$ref": "routeExtension.schema.json"
 		},
 		"SORAReference": {
 			"description": "SORA Specific Operational Risk Assessment",
 			"type": "string"
 		},
 		"ScheduledAircraftMovementStatus": {
-			"type": "array",
-			"items": {
-				"$ref": "scheduledAircraftMovementStatusExtension.schema.json"
-			}
+			"$ref": "scheduledAircraftMovementStatusExtension.schema.json"
 		},
 		"ScheduledDroneAircraftMovementIdentification": {
-			"type": "array",
-			"items": {
-				"$ref": "scheduledDroneAircraftMovementIdentificationExtension.schema.json"
-			}
+			"$ref": "scheduledDroneAircraftMovementIdentificationExtension.schema.json"
 		},
 		"Summary": {
 			"description": "Summary of the flight or operation. This may be shared with others if the scope is global.",

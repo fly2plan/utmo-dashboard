@@ -8,10 +8,7 @@
 			"type": "string"
 		},
 		"AircraftTransportEquipment": {
-			"type": "array",
-			"items": {
-				"$ref": "aircraftTransportEquipmentExtension.schema.json"
-			}
+			"$ref": "aircraftTransportEquipmentExtension.schema.json"
 		},
 		"DroneAircraftTransportIdentification": {
 			"type": "object",
@@ -48,10 +45,7 @@
 			}
 		},
 		"DroneAircraftTransportType": {
-			"type": "array",
-			"items": {
-				"$ref": "droneAircraftTransportTypeExtension.schema.json"
-			}
+			"$ref": "droneAircraftTransportTypeExtension.schema.json"
 		},
 		"FutureMaximumTakeOffWeight": {
 			"description": "Future max takeoff weight",

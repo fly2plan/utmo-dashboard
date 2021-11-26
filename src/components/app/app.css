@@ -1,0 +1,7 @@
+.App {
+  scrollbar-gutter: stable both-edges;
+}
+
+.App > * > div.submission-error {
+  text-align: center;
+}
